@@ -49,7 +49,7 @@
     <rdf:type rdf:resource="http://www.semanticweb.org/daont#DataHolder"/>
     <rdf:type rdf:resource="http://www.semanticweb.org/daont#Manufacturer"/>
     <dpv:hasData rdf:resource="http://www.semanticweb.org/daont#charlieHealthData"/>
-    <performsLegalAction rdf:resource="http://www.semanticweb.org/daont#action_ProvideData_charlie"/>
+    <performsLegalAction rdf:resource="http://www.semanticweb.org/daont#action_provideData_charlie"/>
     <rdfs:label>Watch Manufacturer</rdfs:label>
   </owl:NamedIndividual>
 
@@ -74,13 +74,13 @@
     <hasProvider rdf:resource="http://www.semanticweb.org/daont#watchManufacturer"/>
     <hasRecipient rdf:resource="http://www.semanticweb.org/daont#charlie"/>
     <providesData rdf:resource="http://www.semanticweb.org/daont#charlieHealthData"/>
-    <hasLegalBasis rdf:resource="http://www.semanticweb.org/daont#Article4_1_daont"/>
+    <hasLegalBasis rdf:resource="http://www.semanticweb.org/daont#Article4_1_DataAct"/>
     <actionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-20T09:00:00Z</actionDate>
     <rdfs:label>Provide Data to Charlie</rdfs:label>
   </owl:NamedIndividual>
 
   <!-- Legal Reference -->
-  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daont#Article4_1_daont">
+  <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daont#Article4_1_DataAct">
     <rdf:type rdf:resource="http://www.semanticweb.org/daont#LegalReference"/>
     <hasLegalSource>Regulation (EU) 2023/2854 – Data Act</hasLegalSource>
     <hasArticleNumber>4(1)</hasArticleNumber>
