@@ -1,0 +1,3022 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Party"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#hasRightHolder"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Party"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#hasDutyBearer"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#PartyCategory"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#hasPartyCategory"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Action"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/action"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#NaturalPerson"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3c.github.io/dpv/2.2/dpv/#hasDataSubject"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#Data"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#generatesData"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#Data"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3c.github.io/dpv/2.2/dpv/#hasData"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Duty"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#hasObligation"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#User"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#actsOnBehalfOf"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#User"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#authorizedBy"
+  } ]
+}, {
+  "@id" : "http://creativecommons.org/ns#license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.estrellaproject.org/lkif-core/expression.owl#Legal_Document",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A legal document is a document bearing norms or normative statements. By virtue of this definition the norm-as-propositional-attitude is reified as norm-as proposition. In other words, the norm being expressed through the legal source is an expression of the propositional attitude."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Legal Document"
+  } ]
+}, {
+  "@id" : "http://www.estrellaproject.org/lkif-core/expression.owl#qualifies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "LKIF: Adds qualification to norm or right"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#Qualification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "qualifies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.estrellaproject.org/lkif-core/norm.owl#Right"
+  } ]
+}, {
+  "@id" : "http://www.estrellaproject.org/lkif-core/norm.owl#Right",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "LKIF: Legal entitlement (Hohfeldian)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Right"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.estrellaproject.org/lkif-core/role.owl#plays",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specifies that some thing plays a role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Party"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "plays role in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalRelationship"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#duration",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#Collection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#altLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#example",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#member",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#scopeNote",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "was derived from"
+  } ]
+}, {
+  "@id" : "https://w3c.github.io/dpv/2.2/dpv/#Consent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Consent of the Data Subject for specified process or activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Consent"
+  } ]
+}, {
+  "@id" : "https://w3c.github.io/dpv/2.2/dpv/#DataSubject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The individual (or category of individuals) whose personal data is being processed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Data Subject"
+  } ]
+}, {
+  "@id" : "https://w3c.github.io/dpv/2.2/dpv/#NonPersonalData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Data that is not Personal Data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Non-Personal Data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#Data"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3c.github.io/dpv/2.2/dpv/#PersonalData"
+  } ]
+}, {
+  "@id" : "https://w3c.github.io/dpv/2.2/dpv/#PersonalData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Data directly or indirectly associated or related to an individual"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Personal Data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#Data"
+  }, {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "https://w3c.github.io/dpv/2.2/dpv/#hasData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 2(13) - Data holder has rights to control access to data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#DataHolder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#Data"
+  } ]
+}, {
+  "@id" : "https://w3c.github.io/dpv/2.2/dpv/#hasDataSubject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates association with Data Subject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3c.github.io/dpv/2.2/dpv/#PersonalData"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has data subject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3c.github.io/dpv/2.2/dpv/#DataSubject"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#isSubjectOf"
+  } ]
+}, {
+  "@id" : "https://w3c.github.io/dpv/2.2/dpv/#hasPurpose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates association with Purpose"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Party"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has purpose"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/purpose"
+  } ]
+}, {
+  "@id" : "https://w3c.github.io/dpv/2.2/dpv/#hasRecipient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 5 and Article 8 - Data provision to recipients"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#DataHolder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has recipient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Party"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#receivesDataFrom"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@value" : "provides data to"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://creativecommons.org/ns#license" : [ {
+    "@id" : "http://creativecommons.org/licenses/by-sa/4.0/"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://creativecommons.org/licenses/by-sa/4.0/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Comprehensive Ontology for the EU Data Act (Regulation 2023/2854)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "EU Data Act Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "2.0"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#ActionCondition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Action Condition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#RuleCondition"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#AftermarketServiceProvider",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Service provider competing with or complementing data holder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Aftermarket Service Provider"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#ThirdParty"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Service provider that competes with or complements the data holder's services. Can be designated by user as third party (Article 5) or request data under B2B provisions (Article 8). Key beneficiary of Data Act's market opening objectives."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "energyOptimizationService (third party receiving thermostat data), autoRepair (B2B recipient requesting RobotData), mantenimientoTech, techFix (aftermarket repair services)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Aftermarket Service Provider"
+  }, {
+    "@language" : "es",
+    "@value" : "Proveedor de Servicios Posventa"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "MARKET COMPETITION FOCUS: Data Act aims to enable aftermarket competition. Can access data via (1) user designation as ThirdParty, or (2) B2B request as DataRecipient with user authorization. Non-discrimination required per Article 8(3). Examples include repair services, analytics providers."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#B2BDataSharing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Chapter III (Article 8) - Business-to-business data sharing, must be authorized by user per Article 8(4)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "B2B Data Sharing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#DataSharing"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Data sharing between businesses where a data recipient requests access from a data holder. MANDATORY REQUIREMENTS: (1) User authorization (Article 8(4)), (2) FRAND terms (Article 8(1)), (3) Non-discrimination (Article 8(3)). Data holder may refuse ONLY if data contains trade secrets (Article 8(6))."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Aftermarket repair service (autoRepair) requests robot diagnostic data from RobotManufacturer with user authorization. Violation example: RobotManufacturer refuses without trade secret justification (Article 8(6) violation)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Business-to-Business Data Sharing"
+  }, {
+    "@language" : "es",
+    "@value" : "Compartición de Datos B2B"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Governed by Chapter III, Article 8. COMPLIANCE REQUIREMENT: Data holder can refuse ONLY with trade secret justification (Article 8(6)). Unjustified refusal is a violation detectable via SPARQL query checking for missing DataProvision without TradeSecretData. Related to DataRecipient, DataHolder, FRAND, authorizedBy property."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#B2CDataSharing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Chapter II (Articles 3-7) - Business-to-Consumer data sharing, data holder makes data available to user"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "B2C Data Sharing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#DataSharing"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Data sharing from data holder to user (consumer or enterprise) who owns, rents, or leases the connected product that generated the data. Data holders must make data available without undue delay, free of charge, and in machine-readable format (Article 4)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Consumer (Charlie) requests health data from smart watch manufacturer - manufacturer must provide the data. Factory owner requests sensor data from IoT device manufacturer. Violation example: watchManufacturer fails to provide charlieHealthData despite user request."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Business-to-Consumer Data Sharing"
+  }, {
+    "@language" : "es",
+    "@value" : "Compartición de Datos B2C"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Governed by Chapter II, Article 4. COMPLIANCE REQUIREMENT: Data holder MUST provide data when user requests it. Failure to provide data violates Article 4(1) and is detectable via SPARQL query checking for missing DataProvision actions. Related to ConsumerUser, DataHolder, ConnectedProduct."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#B2GDataSharing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Chapter V (Articles 14-22) - Business to Government data sharing for exceptional need"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "B2G Data Sharing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#DataSharing"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Data sharing from data holder to public sector body based on exceptional need (Article 15) such as public emergency, official statistics, or regulatory function. CRITICAL RESTRICTION: Article 19(2)(a) PROHIBITS using received data to develop products or services competing with private sector."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "HealthAuthority requests health data for public emergency response - ALLOWED. HealthAuthority uses same data to develop competing health app - PROHIBITED (Article 19(2)(a) violation). Statistical office requests industrial data for GDP calculation - ALLOWED."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Business-to-Government Data Sharing"
+  }, {
+    "@language" : "es",
+    "@value" : "Compartición de Datos B2G"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Governed by Chapter V, Articles 14-22. COMPLIANCE REQUIREMENT: Public body MUST NOT use data for competitive product development (Article 19(2)(a)). Violation is detectable via SPARQL query checking if PublicSectorBody performs UseDataToDevelopCompetingProduct action. Related to PublicSectorBody, ExceptionalNeed, Article19_2_a_prohibition."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#BusinessDataRecipient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 8 - Data recipient in B2B context"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Business Data Recipient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#DataRecipient"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#ConnectedProduct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 2(5) - Product generating data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Connected Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Asset"
+  }, {
+    "@id" : "_:genid3"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Physical product that obtains, generates, or collects data concerning its use or environment and communicates this data via electronic means. The data generated by the product is subject to user access rights under Article 4 when user owns, rents, or leases the product."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "smartThermostat1 generates aliceTemperatureData - Alice has access right. smartWatch1 generates charlieHealthData - Charlie requests but watchManufacturer fails to provide (Article 4(1) violation). industrialRobot1 generates RobotData - factoryOwner has access right."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Connected Product"
+  }, {
+    "@language" : "es",
+    "@value" : "Producto Conectado"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Defined in Article 2(5). COMPLIANCE TRIGGER: When ConnectedProduct generates data (via generatesData property), the user who owns/uses it (via ownsOrUses) gains Article 4 access rights. Data holder MUST provide this data when requested. Related to ProductData, isGeneratedBy, ownsOrUses properties."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#ConstitutiveRule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Rule that defines concepts or counts as relationships"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Constitutive Rule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalRule"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#ConsumerUser",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Natural person acting for non-professional purposes - protected by Article 13"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Consumer User"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#User"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Natural person who owns, rents, or leases a connected product for non-professional, personal purposes. Has UNCONDITIONAL right to access generated data (Article 4) free of charge. Enhanced protection against unfair contractual terms under Article 13."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Alice (consumer) requests temperature data from smart thermostat - right guaranteed. Charlie (consumer) requests health data from smart watch - watchManufacturer MUST provide (failure = violation detected in compliance query). Distinct from EnterpriseUser."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Consumer User"
+  }, {
+    "@language" : "es",
+    "@value" : "Usuario Consumidor"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "COMPLIANCE SIGNIFICANCE: Consumer users trigger Article 4(1) obligations on data holders. When ConsumerUser requests data via requestsAccessTo property, data holder MUST perform DataProvision. Failure is Article 4(1) violation. Related to ownsOrUses, requestsAccessTo, hasAccessRight properties."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#ContractFormation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Contract Formation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalAction"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#ContractualRelationship",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Contractual Relationship"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalRelationship"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#ContractualTerm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Provision in agreement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Contractual Term"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Individual provision or clause within a data sharing agreement. Subject to FRAND evaluation in B2B context. Can be FRANDTerms (compliant) or UnfairTerm (non-compliant and unenforceable per Article 13)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Compensation clauses, data format specifications, access frequency limits, confidentiality provisions."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Contractual Term"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Agreement hasTerm ContractualTerm. Properties: isFair, isReasonable, isNonDiscriminatory (boolean checks for FRAND compliance). Subclasses: FRANDTerms, UnfairTerm. Critical for Article 8-13 compliance."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#Data",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 2(1) - Any digital representation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Asset"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Any digital representation of acts, facts, or information, and any compilation of such acts, facts, or information. Fundamental asset in the Data Act ecosystem subject to access rights, sharing obligations, and FRAND terms depending on context (B2C, B2B, B2G)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "aliceTemperatureData (personal product data), machineData1 (non-personal product data), charlieHealthData (personal data subject to access rights). legacyData with isMachineReadable=false violates Article 3(1)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Data"
+  }, {
+    "@language" : "es",
+    "@value" : "Datos"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Defined in Article 2(1). ROOT CONCEPT for compliance: All obligations and rights in the Data Act pertain to Data. Must be machine-readable per Article 3(1) (isMachineReadable property). Specializes into ProductData, RelatedServiceData, PersonalData, NonPersonalData. Related to isGeneratedBy, dpv:hasData properties."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#DataAccessRight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Legal entitlement to access data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Data Access Right"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.estrellaproject.org/lkif-core/norm.owl#Right"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Legal entitlement granted to users to access data generated by connected products they own, rent, or lease. Foundation of the Data Act's user empowerment provisions (Chapter II, Articles 3-7). Creates enforceable obligation on data holders."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "aliceAccessRight (Alice's right to access temperature data from her thermostat under Article 4). When exercised, triggers obligation on thermostatManufacturer to provide data."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Data Access Right"
+  }, {
+    "@language" : "es",
+    "@value" : "Derecho de Acceso a Datos"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Core right in Data Act. Users have DataAccessRight via hasAccessRight property. When user exercises this right via requestsAccessTo, data holder MUST respond with DataProvision action. Failure = Article 4(1) violation detected in compliance queries. Specializes to UserAccessRight."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#DataCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Data type classification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Data Category"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#DataContentCondition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Data Content Condition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#RuleCondition"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#DataHolder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 2(13) - Has the right or obligation to control access to data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Data Holder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Party"
+  }, {
+    "@id" : "_:genid4"
+  }, {
+    "@id" : "_:genid5"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A legal or natural person with the right or obligation to control access to data. MANDATORY OBLIGATIONS: (1) Provide data to users upon request (Article 4) via performsLegalAction→DataProvision, (2) Share with data recipients under FRAND terms (Article 8), (3) Justify refusals with trade secrets (Article 8(6))."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "watchManufacturer (data holder) MUST provide charlieHealthData when Charlie requests it. RobotManufacturer MUST share RobotData with autoRepair unless trade secret exists. thermostatManufacturer successfully provides aliceTemperatureData (compliant example)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Data Holder"
+  }, {
+    "@language" : "es",
+    "@value" : "Titular de Datos"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Defined in Article 2(13). COMPLIANCE ENFORCEMENT: Violations detected when (a) User requests data but holder has no DataProvision action (Article 4 violation), (b) DataRecipient authorized request but holder refuses without trade secret (Article 8(6) violation). Related to dpv:hasData, performsLegalAction, DataProvision."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#DataIntermediationService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Recitals 29-33 - Acts on behalf of user"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Data Intermediation Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Party"
+  }, {
+    "@id" : "_:genid6"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Service that facilitates data sharing by acting on behalf of users. Can exercise user rights under appropriate authorization. Regulated under Data Governance Act and referenced in Data Act Recitals 29-33."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Personal data space providers, data trusts, data cooperatives acting for user collectives."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Data Intermediation Service"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Recitals 29-33. actsOnBehalfOf User. Can exercise DataAccessRight and designate ThirdParty on user's behalf. Subject to Data Governance Act trustworthiness requirements. Enables scalable user empowerment."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#DataLicenseAgreement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 4(13) - License for data use"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Data License Agreement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Agreement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#DataProcessingService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 2(8), Articles 30-32 - Cloud/edge provider"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Data Processing Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#ServiceProvider"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Cloud or edge computing service that processes data. Subject to Chapter VI (Articles 23-32) switching and portability obligations. Must comply with interoperability standards and enable customer switching without vendor lock-in."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "AWS, Azure, Google Cloud processing customer data. Must enable switching per Articles 23-29."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Data Processing Service"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Articles 2(8), 23-32. compliesWith InteroperabilityStandard. implementedBy SmartContract. Data involvesProcessingService DataProcessingService. Critical for cloud portability and multi-cloud strategies. Prevents vendor lock-in."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#DataProvision",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Data Provision"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalAction"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Legal action of making data available to a requesting party (user or data recipient). Acts as COMPLIANCE PROOF that data holder fulfilled their obligation under Article 4 (B2C) or Article 8 (B2B). Linked via performsLegalAction property."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "DataProvisionOfThermostatDataToAlice (compliant - thermostatManufacturer performed action). Missing DataProvision for charlieHealthData = Article 4(1) violation. Missing DataProvision for RobotData to autoRepair = Article 8(6) violation if no trade secret."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Data Provision"
+  }, {
+    "@language" : "es",
+    "@value" : "Provisión de Datos"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "CRITICAL FOR COMPLIANCE VERIFICATION: Absence of DataProvision action when data is requested indicates violation. SPARQL queries use \"FILTER NOT EXISTS { ?holder DAOnt:performsLegalAction ?provision . ?provision a DAOnt:DataProvision }\" to detect violations. Must be performed by DataHolder."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#DataRecipient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 2(14) - Receives data, OTHER THAN the user"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Data Recipient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Party"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#User"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A legal or natural person receiving data from a data holder, explicitly EXCLUDING the user. In B2B context (Article 8), can request data with user authorization under FRAND terms. Data holder may refuse ONLY if trade secret exists (Article 8(6))."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "autoRepair (data recipient) requests RobotData with authorization - RobotManufacturer must provide unless trade secret (violation if refused without justification). energyOptimizationService receives thermostatData (compliant). HealthAuthority receives data in B2G context (different rules)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Data Recipient"
+  }, {
+    "@language" : "es",
+    "@value" : "Destinatario de Datos"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Defined in Article 2(14). COMPLIANCE ROLE: In B2B sharing, DataRecipient triggers Article 8 obligations. When recipient authorized by user requests data, holder MUST provide UNLESS trade secret justification exists. Unjustified refusal (missing DataProvision + no TradeSecretData) = Article 8(6) violation. Related to requestsAccessFrom, BusinessDataRecipient, AftermarketServiceProvider."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#DataRequest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 4, 5, 14 - Formal request"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Data Request"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalAction"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Formal action of requesting access to data. Can be initiated by users (Article 4), data recipients (Article 8), or public sector bodies (Article 14). Creates obligations on data holder depending on context and legal basis. Subject to deadlines (hasDeadline property)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Charlie's request for charlieHealthData (Article 4 - user request), autoRepair requesting RobotData (Article 8 - B2B request), HealthAuthority request for emergency data (Article 14 - B2G request with ExceptionalNeed justification)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Data Request"
+  }, {
+    "@language" : "es",
+    "@value" : "Solicitud de Datos"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "COMPLIANCE TRIGGER ACTION: DataRequest activates obligations. (1) User request via requestsAccessTo → Article 4 obligation, (2) B2B request via requestsAccessFrom → Article 8 obligation if authorized, (3) B2G request via respondsTo ExceptionalNeed → Article 14 obligation. hasDeadline specifies response timeframe."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#DataSharing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Instance of data being shared between parties"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Data Sharing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalAction"
+  }, {
+    "@id" : "_:genid7"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointUnionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/def/DAOnt#B2BDataSharing"
+    }, {
+      "@id" : "https://w3id.org/def/DAOnt#B2CDataSharing"
+    }, {
+      "@id" : "https://w3id.org/def/DAOnt#B2GDataSharing"
+    } ]
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#DataSharingAgreement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Contract governing data sharing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Data Sharing Agreement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Agreement"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Contract between parties governing data sharing arrangements. In B2B context, MUST comply with FRAND conditions (Article 8-12). In B2C context, governed by Chapter II. Subject to unfair terms provisions (Article 13) protecting weaker parties."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "contract189 (FRAND-compliant: all properties true), contract247 (FRAND-violated: isFair=false), contract999 (missing authorization), b2bAgreement1, Contract191 (B2G context), contract_charlie (B2C context)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Acuerdo de Compartición de Datos"
+  }, {
+    "@language" : "en",
+    "@value" : "Data Sharing Agreement"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "COMPLIANCE ANCHOR: DataSharing instances are governedBy DataSharingAgreement. In B2B: agreement is subjectToFRAND (links to FRANDCondition). Violations: unfair terms (Article 13), missing FRAND compliance. Related to compensationAmount, hasTerm, validDuring properties. Used in all three compliance queries."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#DataSharingAuthorization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Data Sharing Authorization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalAction"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#DataSharingRelationship",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Data Sharing Relationship"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalRelationship"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#DataSpace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 33 - Data sharing space"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Data Space"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Federated infrastructure enabling data sharing among multiple parties with common governance. Supported by Article 33 Data Act provisions. Parties participate via participatesIn property. Enables sectoral or cross-sectoral data ecosystems."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "European Health Data Space, Manufacturing-X, Gaia-X data infrastructure, agricultural data space."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Data Space"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Article 33. Party participatesIn DataSpace. Aligns with European Data Strategy. Provides common framework for FRAND-based data sharing at scale. Examples: health data spaces, industrial data spaces, mobility data spaces."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#Enterprise",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Enterprise"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#PartyCategory"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#EnterpriseUser",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Legal person or natural person acting professionally as a user"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Enterprise User"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#User"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Legal person or natural person acting in a professional/commercial capacity who owns, rents, or leases connected products. Has same Article 4 access rights as consumers but fewer Article 13 protections against unfair terms. Typically B2B context."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "factoryOwnerAcme (owns industrialRobot1), factoryOwnerBeta (owns industrialRobot2), factoryOwnerGamma, bob (SME user). Contrast with alice, charlie (ConsumerUser)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Enterprise User"
+  }, {
+    "@language" : "es",
+    "@value" : "Usuario Empresarial"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Professional user category. SAME ACCESS RIGHTS as ConsumerUser (Article 4) but DIFFERENT PROTECTIONS: Article 13 unfair terms provisions primarily protect consumers. Can authorize B2B data sharing (Article 8(4)). Related to SME, LargeEnterprise classifications via hasPartyType."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#ExceptionalNeed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Exceptional Need"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Justification basis for public sector data requests under Article 15. Includes public emergencies, official statistics, regulatory functions, or other compelling public interest. Required for B2G data sharing under Chapter V (Articles 14-22)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "PublicHealthEmergency (Article 15 - justifies HealthAuthority requesting health data for emergency response). Statistical data collection for GDP calculation. Regulatory oversight of critical infrastructure. Natural disaster response."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Exceptional Need"
+  }, {
+    "@language" : "es",
+    "@value" : "Necesidad Excepcional"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Article 15 B2G REQUIREMENT: PublicSectorBody MUST demonstrate ExceptionalNeed to request data. DataRequest respondsTo ExceptionalNeed. PublicSectorBody hasExceptionalNeedFor specific Data. Without valid exceptional need, B2G request is unlawful. Examples enumerated in Article 15."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#FRANDCondition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 8-12 - FRAND conditions"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FRAND Condition"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Fair, Reasonable, And Non-Discriminatory conditions mandatory for B2B data sharing agreements (Article 8(1)). Ensures data recipients can access data under balanced terms. COMPLIANCE METRICS: isFair, isReasonable, isNonDiscriminatory properties must all be true. Violations render contractual terms unenforceable (Article 13)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "frand189 (all properties true) = compliant B2B agreement. frand247 (isFair=false, isNonDiscriminatory=false) = Article 8(1) violation, terms unenforceable. compensationAmount must be reasonable. Non-discrimination: comparable recipients get comparable terms (Article 8(3))."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Condición FRAND"
+  }, {
+    "@language" : "en",
+    "@value" : "FRAND Condition"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Core B2B compliance concept. Related to DataSharingAgreement via subjectToFRAND property. While not directly checked in unjustified refusal query, FRAND context matters: holder cannot impose unfair terms as reason to refuse (must only refuse for trade secrets per Article 8(6)). Related to isFair, isReasonable, isNonDiscriminatory datatype properties."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#FRANDTerms",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "FRAND contractual terms"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FRAND Terms"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#ContractualTerm"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Contractual terms that meet Fair, Reasonable, And Non-Discriminatory criteria. Required in B2B data sharing agreements (Article 8). Enforceable terms that balance interests of data holder and data recipient."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Reasonable compensation reflecting costs, non-discriminatory treatment of similar recipients, fair contract duration enabling market entry."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "FRAND Terms"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Compliant ContractualTerm. Must satisfy: isFair=true, isReasonable=true, isNonDiscriminatory=true. Linked to FRANDCondition via DataSharingAgreement. Essential for B2B compliance under Articles 8-12."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#InteroperabilityStandard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 34-35 - Standard"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Interoperability Standard"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Technical standard ensuring data portability and service interoperability. Required for data processing services under Articles 34-35. Enables data sharing across platforms and prevents technical lock-in."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Data format standards, API specifications, protocol standards for data exchange."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Interoperability Standard"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Articles 34-35. DataProcessingService compliesWith InteroperabilityStandard. Essential for Chapter VI (cloud switching) and Chapter VII (smart contracts) implementation. European Commission may mandate specific standards."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#LargeEnterprise",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Large Enterprise"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#Enterprise"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#SME"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#LegalAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Legal Action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Action"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Action with legal significance in data sharing context. Includes DataProvision, DataRequest, DataSharing, ContractFormation. Party performsLegalAction LegalAction. Creates, modifies, or terminates legal relationships and obligations."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "DataProvisionOfThermostatDataToAlice (provision action), charlie requesting data (request action), agreement189 (B2B sharing action)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Legal Action"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Abstract superclass for legally relevant actions. Subclasses: DataProvision (compliance proof), DataRequest (obligation trigger), DataSharing (B2C/B2B/B2G), DataSharingAuthorization (Article 8(4)). Related properties: performsLegalAction, hasParticipant, occursAt, actionType."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#LegalEffect",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Legal consequence when rule fires"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Legal Effect"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#LegalRelationship",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Legal Relationship"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#LegalRule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Formal representation of a legal rule from the Data Act"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Legal Rule"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Formal logical representation of a legal rule from the Data Act, structured as IF (antecedent) THEN (consequent) with possible exceptions. Encodes obligations, permissions, and prohibitions from the regulation for automated compliance checking."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "article4_1_rule (IF user requests data THEN holder must provide), article8_6_rule (permission to refuse IF trade secret), Article19_2_a_rule (prohibition on competitive product development by public bodies)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Legal Rule"
+  }, {
+    "@language" : "es",
+    "@value" : "Regla Legal"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "FORMALIZATION PATTERN: hasAntecedent (conditions triggering rule) → hasConsequent (legal effect when triggered). May have hasException (conditions preventing rule application). hasDeonticSpecification links to Duty/Permission/Prohibition. derivesFrom links to LegalSource (articles). Properties: ruleIdentifier, ruleText."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#LegalSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Source document (regulation, article, recital)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Legal Source"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#Manufacturer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 3 - Manufacturer of connected products"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#DataHolder"
+  }, {
+    "@id" : "https://w3id.org/def/DAOnt#ServiceProvider"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Legal or natural person who manufactures connected products. Typically the initial data holder for product data. Subject to Chapter II obligations (provide data to users) and Chapter III obligations (share with data recipients under FRAND terms)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "thermostatManufacturer (compliant - performs DataProvision), watchManufacturer (non-compliant - fails to provide charlieHealthData), RobotManufacturer (holds RobotData1), sensorManufacturer (manufactures industrialSensor1)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Fabricante"
+  }, {
+    "@language" : "en",
+    "@value" : "Manufacturer"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Article 3 definition. DUAL ROLE: (1) As DataHolder - must provide data to users (Article 4), (2) As ServiceProvider - may provide related services. Common violator in compliance scenarios. Related to manufacturerIdentifier property on ConnectedProduct. Subclass of both DataHolder and ServiceProvider."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#Metadata",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 3(1) - Information to interpret data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Metadata"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#Data"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#Microenterprise",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Microenterprise"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#SME"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#NaturalPerson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Natural Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#PartyCategory"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#PartyCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Party Category"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointUnionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/def/DAOnt#Enterprise"
+    }, {
+      "@id" : "https://w3id.org/def/DAOnt#NaturalPerson"
+    }, {
+      "@id" : "https://w3id.org/def/DAOnt#PublicSectorBody"
+    } ]
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#ProductData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 2(15) - Generated by product use"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Product Data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#Data"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#RelatedServiceData"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Data generated by the use of a connected product. This data triggers user access rights under Article 4 when the user owns, rents, or leases the product. Distinct from related service data per Article 2(15) vs 2(16)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "aliceTemperatureData (from smartThermostat1), charlieHealthData (from smartWatch1 - access denied = violation), RobotData1 (from industrialRobot1), machineData1 (from industrialSensor1)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Datos de Producto"
+  }, {
+    "@language" : "en",
+    "@value" : "Product Data"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Defined in Article 2(15). COMPLIANCE TRIGGER: ProductData generated by ConnectedProduct creates Article 4 obligation on data holder to provide to user. Used in compliance Query 1 (B2C violations) via isGeneratedBy property. Disjoint with RelatedServiceData."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#PublicSectorBody",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 2(28) - National/regional/local authority"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Public Sector Body"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#PartyCategory"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "State, regional, or local authority, body governed by public law, or public undertaking that can request data under exceptional need (Article 15). CRITICAL PROHIBITION: Article 19(2)(a) FORBIDS using received data to develop products/services competing with private sector."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "HealthAuthority requests health data for emergency response (ALLOWED) but uses it to develop competing health app (PROHIBITED - Article 19(2)(a) violation detected in compliance query). Statistical office requests industrial data for GDP (ALLOWED). UnionBody (EU-level) follows same rules."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Organismo del Sector Público"
+  }, {
+    "@language" : "en",
+    "@value" : "Public Sector Body"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Defined in Article 2(28). COMPLIANCE ENFORCEMENT: Must demonstrate exceptional need (Article 15). PROHIBITED from performing UseDataToDevelopCompetingProduct action - violation detectable via SPARQL query. Related to B2GDataSharing, ExceptionalNeed, hasExceptionalNeedFor, Article19_2_a_prohibition. Can be both PublicSectorBody and DataRecipient."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#Qualification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Qualification"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#RegulationDocument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Regulation Document"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.estrellaproject.org/lkif-core/expression.owl#Legal_Document"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#RegulativeRule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Rule that prescribes behavior (obligations, permissions, prohibitions)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Regulative Rule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalRule"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Legal rule that prescribes, permits, or prohibits specific behaviors. Encodes normative content of Data Act provisions. Distinguished from ConstitutiveRule (which defines concepts). Operationalizes compliance obligations through prescribes (Duty), permits (Permission), prohibits (Prohibition)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "article4_1_rule (prescribes article4_1_obligation - holder must provide data to user), article8_6_rule (permits article8_6_permission - holder may refuse if trade secret), Article19_2_a_rule (prohibits article19_2_a_prohibition - public body cannot develop competing product)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Regla Regulativa"
+  }, {
+    "@language" : "en",
+    "@value" : "Regulative Rule"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "BEHAVIORAL NORMS: RegulativeRules create enforceable obligations. isConstitutive=false distinguishes from ConstitutiveRule. Links to deontic specifications: prescribes Duty (Article 4 obligation), permits Permission (Article 8(6) refusal right), prohibits Prohibition (Article 19(2)(a) competitive use ban)."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#RelatedService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 2(6) - Digital service connected to product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Related Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Asset"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#RelatedServiceData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 2(16) - From related service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Related Service Data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#Data"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Data generated by a digital service connected to or supporting a connected product (Article 2(16)). Distinct from ProductData but subject to similar access obligations. Covers cloud services, companion apps, and platform services related to product functionality."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Cloud-stored configuration data for smart home device, fitness tracking platform data linked to wearable, vehicle telematics processed by manufacturer's cloud service, companion app usage analytics."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Datos de Servicio Relacionado"
+  }, {
+    "@language" : "en",
+    "@value" : "Related Service Data"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Article 2(16) definition. Disjoint with ProductData per owl:disjointWith. Generated by RelatedService (Article 2(6)) provided via providesRelatedService property. User access rights under Chapter II may extend to RelatedServiceData when essential for product use. Managed by RelatedServiceProvider."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#RelatedServiceProvider",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Provides related service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Related Service Provider"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#DataHolder"
+  }, {
+    "@id" : "https://w3id.org/def/DAOnt#ServiceProvider"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#RuleCondition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Condition in rule antecedent or exception"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Rule Condition"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#SME",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SME"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#Enterprise"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#ServiceProvider",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Abstract class for service providers"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Service Provider"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Party"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#SmartContract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 36 - Automated execution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Smart Contract"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Computer program that automatically executes data sharing agreements or processes. Subject to Article 36 requirements including access termination mechanisms and compliance safeguards. Must be implementedBy compliant DataProcessingService."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Automated data access control system, blockchain-based data sharing agreement, DLT-based consent management."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Smart Contract"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Article 36. implementedBy DataProcessingService. Must include safe termination, access control, and compliance verification mechanisms. Automates data sharing under DataSharingAgreement. Subject to unilateral termination rights."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#TemporalEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Temporal Entity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#ThirdParty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 5 - Third party designated by user"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Third Party"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#DataRecipient"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A data recipient explicitly designated by the user to receive data directly from the data holder (Article 5). Enables users to share their product data with trusted service providers without intermediary steps. Data holder must honor designation."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "energyOptimizationService (third party designated by Alice to receive aliceTemperatureData). User-driven data sharing distinct from B2B requests under Article 8."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Tercero"
+  }, {
+    "@language" : "en",
+    "@value" : "Third Party"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Article 5 right. USER EMPOWERMENT: Users can designate third parties via designatesThirdParty property. Data holder must provide data directly to designated third party. Related to AftermarketServiceProvider. Subclass of DataRecipient but initiated by user choice, not B2B request."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#TimeInterval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Time Interval"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#TemporalEntity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#TimePoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Time Point"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#TemporalEntity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#UnfairTerm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 13 - Unfair and not binding"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Unfair Term"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#ContractualTerm"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Contractual term that fails FRAND requirements or imposes unjustified burdens on weaker parties, particularly consumers and SMEs. Not binding under Article 13. Includes terms with isFair=false, isReasonable=false, or isNonDiscriminatory=false."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Terms in contract247 where isFair=false and isNonDiscriminatory=false constitute UnfairTerms. Excessive compensationAmount, discriminatory pricing, unreasonable contract duration are typical unfair terms."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Cláusula Abusiva"
+  }, {
+    "@language" : "en",
+    "@value" : "Unfair Term"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Article 13 protection mechanism. LEGAL EFFECT: Unfair terms are UNENFORCEABLE. Applies primarily to B2B agreements (must be FRAND-compliant) and B2C agreements (consumer protection). Related to FRANDCondition - when isFair, isReasonable, or isNonDiscriminatory is false, term becomes unfair. Court-enforceable nullity."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#UnionBody",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 2(27) - EU body or agency"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Union Body"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#PublicSectorBody"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#UseDataToDevelopCompetingProduct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Use Data To Develop Competing Product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Action"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "PROHIBITED ACTION under Article 19(2)(a): Using data obtained through B2G data sharing (Chapter V) to develop or improve products or services that compete with private sector offerings. Applies ONLY to public sector bodies receiving data under exceptional need."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "HealthAuthority receives patient data for emergency monitoring - using it to develop competing health tracking app = VIOLATION (UsesDataToDevelopCompetingProduct1 instance violates Article 19(2)(a)). Public transport authority using traffic data for route optimization = ALLOWED (not competing with private sector)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Usar Datos para Desarrollar Producto Competidor"
+  }, {
+    "@language" : "en",
+    "@value" : "Use Data To Develop Competing Product"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "CRITICAL PROHIBITION: Article 19(2)(a) explicitly forbids this action by PublicSectorBody. COMPLIANCE DETECTION: SPARQL query checks if PublicSectorBody performs this action - existence indicates violation. Related to B2GDataSharing, Article19_2_a_prohibition, PublicSectorBody via performsAction property."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#User",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 2(12) - Natural or legal person who owns, rents, or leases a connected product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "User"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Party"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Natural or legal person who owns, rents, or leases a connected product that generates data. Has FUNDAMENTAL RIGHTS: (1) Access data from their product (Article 4), (2) Designate third parties to receive data (Article 5), (3) Authorize B2B data sharing (Article 8(4)). Distinct from DataRecipient per Article 2(14)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "Alice (consumer) owns smartThermostat1, requests aliceTemperatureData - holder must provide. factoryOwnerAcme authorizes B2B sharing in agreement247. Charlie requests charlieHealthData but watchManufacturer fails to provide (violation). User ≠ DataRecipient (disjoint classes)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "User"
+  }, {
+    "@language" : "es",
+    "@value" : "Usuario"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Defined in Article 2(12). COMPLIANCE ROLES: (a) In B2C: requestsAccessTo triggers Article 4 obligation on holder, (b) In B2B: authorizedBy property makes B2B sharing lawful per Article 8(4). Related to ConsumerUser, EnterpriseUser, ownsOrUses, requestsAccessTo, hasAccessRight, designatesThirdParty properties."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#UserAccessRight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 4 - User's right"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "User Access Right"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#DataAccessRight"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Specific instantiation of DataAccessRight for users under Article 4. Unconditional right to access product data without undue delay, free of charge, in machine-readable format. Central to B2C data sharing compliance."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@language" : "en",
+    "@value" : "aliceAccessRight (applicableArticle='Article 4') gives Alice unconditional right to aliceTemperatureData. watchManufacturer's failure to honor Charlie's right = Article 4(1) violation."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "es",
+    "@value" : "Derecho de Acceso del Usuario"
+  }, {
+    "@language" : "en",
+    "@value" : "User Access Right"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Article 4 right. COMPLIANCE CRITICAL: This right creates non-waivable obligation on data holders. Violation when user has UserAccessRight and requests data (requestsAccessTo) but holder fails to perform DataProvision. applicableArticle property links to 'Article 4'."
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#actionType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "action type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#actsOnBehalfOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Recitals 29-33 - Intermediary may exercise user rights"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#DataIntermediationService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "acts on behalf of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#User"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#agreementDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Agreement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "agreement date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#applicableArticle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#DataAccessRight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "applicable article"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#articleReference",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article number (e.g., 'Article 4(1)')"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalSource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "article reference"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#authorizedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 8(4) - B2B data sharing must be authorized by the user"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#DataSharing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "authorized by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#User"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#classifiedAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#Data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "classified as"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#DataCategory"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#compensationAmount",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 8(1) - Compensation under FRAND terms"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Agreement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "compensation amount"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#compliesWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 34-35 - Interoperability compliance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#DataProcessingService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "complies with"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#InteroperabilityStandard"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#containsTradeSecret",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#Data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "contains trade secret"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#createsDuty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "creates duty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Duty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#createsRight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "creates right"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.estrellaproject.org/lkif-core/norm.owl#Right"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#dataFormat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#Data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "data format"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#deonticModality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Obligation, Permission, or Prohibition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Rule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "deontic modality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#derivesFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links rule to its legal source (article, regulation)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalRule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "derives from"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalSource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#designatesThirdParty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 5(1) - User can designate a third party to receive data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#User"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "designates third party"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#ThirdParty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#duration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#TemporalEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "duration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#duration"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#endTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#TemporalEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "end time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#fulfillsActionCondition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "fulfills action condition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#ActionCondition"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#fulfillsDataContentCondition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#Data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "fulfills data content condition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#DataContentCondition"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#generatesData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Product generates data during use"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#ConnectedProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "generates data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#Data"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#isGeneratedBy"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#governedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#DataSharing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "governed by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Agreement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#governedByAgreement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Contract governs relationship"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Party"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "governed by agreement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Agreement"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#grantsAccessTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#DataHolder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "grants access to"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#DataRecipient"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#hasAccessRight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 4 - Users have rights to access data generated by their products"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#User"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has access right"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#DataAccessRight"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#hasAntecedent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Condition that triggers the rule (IF part)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalRule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has antecedent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#RuleCondition"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#hasBeneficiary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Actor benefiting from the deontic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Rule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has beneficiary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Party"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#hasConsequent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Effect when antecedent is satisfied (THEN part)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalRule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has consequent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalEffect"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#hasCounterparty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalRelationship"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has counterparty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Party"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#hasDeadline",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Response deadline for data request"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#DataRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has deadline"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#hasDeonticSpecification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Obligation, permission, or prohibition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalRule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has deontic specification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Rule"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#hasDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Human-readable description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#Data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#hasDutyBearer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Duty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has duty bearer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Party"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#hasException",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Exception to rule application"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalRule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has exception"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#RuleCondition"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#hasExceptionalNeedFor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 14-15 - B2G request basis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#PublicSectorBody"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has exceptional need for"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#Data"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#hasJurisdiction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalSource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has jurisdiction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#hasObligation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#DataHolder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has obligation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Duty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#hasParticipant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has participant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Party"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#hasPartyCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Party"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has party category"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#PartyCategory"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#hasRightHolder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.estrellaproject.org/lkif-core/norm.owl#Right"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has right holder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Party"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#hasTerm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Agreement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has term"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#ContractualTerm"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#implementedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 36 - Smart contract executed by DPS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#SmartContract"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "implemented by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#DataProcessingService"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#involvesProcessingService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Cloud involvement in data processing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#Data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "involves processing service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#DataProcessingService"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#isConstitutive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "True if rule defines concepts, false if regulative"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalRule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is constitutive"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#isFair",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 8(1) - FRAND requirement: Fair"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#ContractualTerm"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is fair"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#isGeneratedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#Data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is generated by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#ConnectedProduct"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#isMachineReadable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 3(1) - Default true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#Data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is machine readable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#isNonDiscriminatory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 8(1) - FRAND requirement: Non-discriminatory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#ContractualTerm"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is non-discriminatory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#isPersonal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#Data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is personal data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#isReasonable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 8(1) - FRAND requirement: Reasonable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#ContractualTerm"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is reasonable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#isSubjectOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3c.github.io/dpv/2.2/dpv/#DataSubject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is subject of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3c.github.io/dpv/2.2/dpv/#PersonalData"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#legalEffect",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Legal effect description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "legal effect"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#legalSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Reference to legal document or provision"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "legal source"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#manufacturerIdentifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#ConnectedProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "manufacturer identifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#modifies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "modifies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalRelationship"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#occursAt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalAction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "occurs at"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#TemporalEntity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#owns",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 2(12) - Ownership"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#User"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "owns"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#ConnectedProduct"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#participatesIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 33 - Participation in data space"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Party"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "participates in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#DataSpace"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#performsAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Party"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "performs action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Action"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#performsLegalAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Party"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "performs legal action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalAction"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#permits",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Rule grants a permission"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalRule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "permits"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Permission"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#prescribes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Rule creates an obligation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalRule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "prescribes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Duty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#presupposesAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#ActionCondition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "presupposes action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Action"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#presupposesDataContent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#DataContentCondition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "presupposes data content"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#Data"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#productCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#ConnectedProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "product category"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#prohibits",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Rule establishes a prohibition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalRule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "prohibits"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Prohibition"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#providesConsentFor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3c.github.io/dpv/2.2/dpv/#DataSubject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "provides consent for"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3c.github.io/dpv/2.2/dpv/#Consent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#providesRelatedService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Product linked to related service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#ConnectedProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "provides related service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#RelatedService"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#qualifiedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Qualification or condition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "qualified by"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#receivesDataFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Party"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "receives data from"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#DataHolder"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#requestsAccessFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 8(1) - Data recipient can request access to data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#DataRecipient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "requests access from"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#DataHolder"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#requestsAccessTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 4 - User requests access to their data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#User"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "requests access to"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#Data"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#respondsTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links B2G request to justification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#DataRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "responds to"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#ExceptionalNeed"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#ruleIdentifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Unique identifier for the rule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalRule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "rule identifier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#ruleSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Reference to specific article or recital"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "rule source"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#ruleText",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Full text of the legal rule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalRule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "rule text"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#startTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#TemporalEntity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "start time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#subjectToFRAND",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 8-12 - FRAND conditions in B2B"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Agreement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "subject to FRAND"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#FRANDCondition"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#temporalExtent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Temporal period during which something holds"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "temporal extent"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#terminatedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalRelationship"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "terminated by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#LegalAction"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#treatsComparably",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 8(3) - Non-discrimination between comparable recipients"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#DataHolder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "treats comparably"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#DataRecipient"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#triggeredBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Condition that activates this obligation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Duty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "triggered by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#RuleCondition"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#uses",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Article 2(12) - Contractual use"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#User"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "uses"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#RelatedService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DAOnt#validDuring",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Agreement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "valid during"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/DAOnt#TemporalEntity"
+  } ]
+}, {
+  "@id" : "https://www.w3.org/ns/odrl/2/Action",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An operation on an Asset."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Action"
+  } ]
+}, {
+  "@id" : "https://www.w3.org/ns/odrl/2/Agreement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Policy that grants the assignee a Rule over an Asset from an assigner."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Agreement"
+  } ]
+}, {
+  "@id" : "https://www.w3.org/ns/odrl/2/Asset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Abstract class for products, services, and data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Asset"
+  } ]
+}, {
+  "@id" : "https://www.w3.org/ns/odrl/2/Constraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A boolean expression that refines the semantics of an Action and Party/Asset Collection or declare the conditions applicable to a Rule."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Constraint"
+  } ]
+}, {
+  "@id" : "https://www.w3.org/ns/odrl/2/Duty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The obligation to perform an Action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Duty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Rule"
+  }, {
+    "@id" : "_:genid14"
+  } ]
+}, {
+  "@id" : "https://www.w3.org/ns/odrl/2/Party",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An entity or a collection of entities that undertake Roles in a Rule."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Party"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid15"
+  } ]
+}, {
+  "@id" : "https://www.w3.org/ns/odrl/2/Permission",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The ability to perform an Action over an Asset."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Permission"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Rule"
+  } ]
+}, {
+  "@id" : "https://www.w3.org/ns/odrl/2/Prohibition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The inability to perform an Action over an Asset."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Prohibition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Rule"
+  } ]
+}, {
+  "@id" : "https://www.w3.org/ns/odrl/2/Rule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An abstract concept that represents the common characteristics of Permissions, Prohibitions, and Duties."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Rule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid16"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointUnionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://www.w3.org/ns/odrl/2/Duty"
+    }, {
+      "@id" : "https://www.w3.org/ns/odrl/2/Permission"
+    }, {
+      "@id" : "https://www.w3.org/ns/odrl/2/Prohibition"
+    } ]
+  } ]
+}, {
+  "@id" : "https://www.w3.org/ns/odrl/2/action",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The operation relating to the Asset for which the Rule is being subjected."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Rule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Action"
+  } ]
+}, {
+  "@id" : "https://www.w3.org/ns/odrl/2/assignee",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Party is the recipient of the Rule."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Rule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "assignee"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Party"
+  } ]
+}, {
+  "@id" : "https://www.w3.org/ns/odrl/2/constraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Constraint applied to a Rule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Rule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has constraint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Constraint"
+  } ]
+}, {
+  "@id" : "https://www.w3.org/ns/odrl/2/purpose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A defined purpose for exercising the action of the Rule."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Purpose"
+  } ]
+}, {
+  "@id" : "https://www.w3.org/ns/odrl/2/target",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The target property indicates the Asset that is the primary subject to which the Rule action directly applies."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Rule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "target"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.w3.org/ns/odrl/2/Asset"
+  } ]
+} ]

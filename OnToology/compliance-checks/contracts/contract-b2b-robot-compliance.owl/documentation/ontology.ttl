@@ -1,0 +1,265 @@
+@prefix : <http://www.semanticweb.org/dataact/contracts/b2b-robot#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/dataact/contracts/b2b-robot#> .
+
+<http://www.semanticweb.org/dataact/contracts/b2b-robot> rdf:type owl:Ontology ;
+                                                          owl:imports <http://www.semanticweb.org/dataact> ;
+                                                          rdfs:comment """
+      ✅ COMPLIANT scenario — Manufacturer performs DataProvision and declares TradeSecret justification.
+    """ ;
+                                                          rdfs:label "Industrial Robot Maintenance Contract (Compliant)" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.semanticweb.org/dataact#agreementDate
+<http://www.semanticweb.org/dataact#agreementDate> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dataact#authorizedBy
+<http://www.semanticweb.org/dataact#authorizedBy> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dataact#compensationAmount
+<http://www.semanticweb.org/dataact#compensationAmount> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dataact#containsTradeSecret
+<http://www.semanticweb.org/dataact#containsTradeSecret> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dataact#generatesData
+<http://www.semanticweb.org/dataact#generatesData> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dataact#governedBy
+<http://www.semanticweb.org/dataact#governedBy> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dataact#hasDescription
+<http://www.semanticweb.org/dataact#hasDescription> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dataact#hasProvider
+<http://www.semanticweb.org/dataact#hasProvider> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dataact#hasRecipient
+<http://www.semanticweb.org/dataact#hasRecipient> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dataact#isFair
+<http://www.semanticweb.org/dataact#isFair> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dataact#isGeneratedBy
+<http://www.semanticweb.org/dataact#isGeneratedBy> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dataact#isMachineReadable
+<http://www.semanticweb.org/dataact#isMachineReadable> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dataact#isNonDiscriminatory
+<http://www.semanticweb.org/dataact#isNonDiscriminatory> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dataact#isPersonal
+<http://www.semanticweb.org/dataact#isPersonal> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dataact#isReasonable
+<http://www.semanticweb.org/dataact#isReasonable> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dataact#manufacturerIdentifier
+<http://www.semanticweb.org/dataact#manufacturerIdentifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dataact#ownsOrUses
+<http://www.semanticweb.org/dataact#ownsOrUses> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dataact#performsLegalAction
+<http://www.semanticweb.org/dataact#performsLegalAction> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dataact#productCategory
+<http://www.semanticweb.org/dataact#productCategory> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dataact#providesData
+<http://www.semanticweb.org/dataact#providesData> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dataact#subjectToFRAND
+<http://www.semanticweb.org/dataact#subjectToFRAND> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3c.github.io/dpv/2.2/dpv/#hasData
+<https://w3c.github.io/dpv/2.2/dpv/#hasData> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3c.github.io/dpv/2.2/dpv/#hasRecipient
+<https://w3c.github.io/dpv/2.2/dpv/#hasRecipient> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/dataact#AftermarketServiceProvider
+<http://www.semanticweb.org/dataact#AftermarketServiceProvider> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/dataact#B2BDataSharing
+<http://www.semanticweb.org/dataact#B2BDataSharing> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/dataact#ConnectedProduct
+<http://www.semanticweb.org/dataact#ConnectedProduct> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/dataact#DataHolder
+<http://www.semanticweb.org/dataact#DataHolder> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/dataact#DataProvision
+<http://www.semanticweb.org/dataact#DataProvision> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/dataact#DataRecipient
+<http://www.semanticweb.org/dataact#DataRecipient> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/dataact#DataSharingAgreement
+<http://www.semanticweb.org/dataact#DataSharingAgreement> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/dataact#EnterpriseUser
+<http://www.semanticweb.org/dataact#EnterpriseUser> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/dataact#FRANDCondition
+<http://www.semanticweb.org/dataact#FRANDCondition> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/dataact#Manufacturer
+<http://www.semanticweb.org/dataact#Manufacturer> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/dataact#ProductData
+<http://www.semanticweb.org/dataact#ProductData> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/dataact#TradeSecretData
+<http://www.semanticweb.org/dataact#TradeSecretData> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/dataact#User
+<http://www.semanticweb.org/dataact#User> rdf:type owl:Class .
+
+
+###  https://w3c.github.io/dpv/2.2/dpv/#NonPersonalData
+<https://w3c.github.io/dpv/2.2/dpv/#NonPersonalData> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/dataact#agreement247
+<http://www.semanticweb.org/dataact#agreement247> rdf:type owl:NamedIndividual ,
+                                                           <http://www.semanticweb.org/dataact#B2BDataSharing> ;
+                                                  <http://www.semanticweb.org/dataact#authorizedBy> <http://www.semanticweb.org/dataact#factoryOwnerAcme> ;
+                                                  <http://www.semanticweb.org/dataact#governedBy> <http://www.semanticweb.org/dataact#contract247> ;
+                                                  rdfs:label "Agreement 247" .
+
+
+###  http://www.semanticweb.org/dataact#autoRepair
+<http://www.semanticweb.org/dataact#autoRepair> rdf:type owl:NamedIndividual ,
+                                                         <http://www.semanticweb.org/dataact#AftermarketServiceProvider> ,
+                                                         <http://www.semanticweb.org/dataact#DataRecipient> ;
+                                                rdfs:label "AutoRepair Ltd" .
+
+
+###  http://www.semanticweb.org/dataact#contract247
+<http://www.semanticweb.org/dataact#contract247> rdf:type owl:NamedIndividual ,
+                                                          <http://www.semanticweb.org/dataact#DataSharingAgreement> ;
+                                                 <http://www.semanticweb.org/dataact#agreementDate> "2024-02-10T14:30:00Z"^^xsd:dateTime ;
+                                                 <http://www.semanticweb.org/dataact#compensationAmount> 800.00 ;
+                                                 <http://www.semanticweb.org/dataact#subjectToFRAND> <http://www.semanticweb.org/dataact#frand247> ;
+                                                 rdfs:label "Contract 247 - Robot Maintenance" ;
+                                                 <https://w3c.github.io/dpv/2.2/dpv/#hasRecipient> <http://www.semanticweb.org/dataact#autoRepair> .
+
+
+###  http://www.semanticweb.org/dataact#dataProvision_robot1
+<http://www.semanticweb.org/dataact#dataProvision_robot1> rdf:type owl:NamedIndividual ,
+                                                                   <http://www.semanticweb.org/dataact#DataProvision> ;
+                                                          <http://www.semanticweb.org/dataact#hasProvider> <http://www.semanticweb.org/dataact#robotManufacturer> ;
+                                                          <http://www.semanticweb.org/dataact#hasRecipient> <http://www.semanticweb.org/dataact#autoRepair> ;
+                                                          <http://www.semanticweb.org/dataact#providesData> <http://www.semanticweb.org/dataact#robotData1> ;
+                                                          rdfs:comment "Shared under FRAND and TradeSecret justification: COMPLIANT." ;
+                                                          rdfs:label "Data Provision - Robot Manufacturer to AutoRepair" .
+
+
+###  http://www.semanticweb.org/dataact#factoryOwnerAcme
+<http://www.semanticweb.org/dataact#factoryOwnerAcme> rdf:type owl:NamedIndividual ,
+                                                               <http://www.semanticweb.org/dataact#EnterpriseUser> ,
+                                                               <http://www.semanticweb.org/dataact#User> ;
+                                                      <http://www.semanticweb.org/dataact#ownsOrUses> <http://www.semanticweb.org/dataact#industrialRobot1> ;
+                                                      rdfs:label "Factory Owner ACME" .
+
+
+###  http://www.semanticweb.org/dataact#frand247
+<http://www.semanticweb.org/dataact#frand247> rdf:type owl:NamedIndividual ,
+                                                       <http://www.semanticweb.org/dataact#FRANDCondition> ;
+                                              <http://www.semanticweb.org/dataact#isFair> "true"^^xsd:boolean ;
+                                              <http://www.semanticweb.org/dataact#isNonDiscriminatory> "true"^^xsd:boolean ;
+                                              <http://www.semanticweb.org/dataact#isReasonable> "true"^^xsd:boolean ;
+                                              rdfs:label "FRAND Condition 247" .
+
+
+###  http://www.semanticweb.org/dataact#industrialRobot1
+<http://www.semanticweb.org/dataact#industrialRobot1> rdf:type owl:NamedIndividual ,
+                                                               <http://www.semanticweb.org/dataact#ConnectedProduct> ;
+                                                      <http://www.semanticweb.org/dataact#generatesData> <http://www.semanticweb.org/dataact#robotData1> ;
+                                                      <http://www.semanticweb.org/dataact#manufacturerIdentifier> "ROBOT-IND-2024-001" ;
+                                                      <http://www.semanticweb.org/dataact#productCategory> "Industrial Automation" ;
+                                                      rdfs:label "Industrial Robot 1" .
+
+
+###  http://www.semanticweb.org/dataact#robotData1
+<http://www.semanticweb.org/dataact#robotData1> rdf:type owl:NamedIndividual ,
+                                                         <http://www.semanticweb.org/dataact#ProductData> ,
+                                                         <https://w3c.github.io/dpv/2.2/dpv/#NonPersonalData> ;
+                                                <http://www.semanticweb.org/dataact#containsTradeSecret> <http://www.semanticweb.org/dataact#tradeSecret_robotData1> ;
+                                                <http://www.semanticweb.org/dataact#hasDescription> "Operational metrics, performance data, maintenance logs" ;
+                                                <http://www.semanticweb.org/dataact#isGeneratedBy> <http://www.semanticweb.org/dataact#industrialRobot1> ;
+                                                <http://www.semanticweb.org/dataact#isMachineReadable> "true"^^xsd:boolean ;
+                                                <http://www.semanticweb.org/dataact#isPersonal> "false"^^xsd:boolean ;
+                                                rdfs:label "Robot Data 1" .
+
+
+###  http://www.semanticweb.org/dataact#robotManufacturer
+<http://www.semanticweb.org/dataact#robotManufacturer> rdf:type owl:NamedIndividual ,
+                                                                <http://www.semanticweb.org/dataact#DataHolder> ,
+                                                                <http://www.semanticweb.org/dataact#Manufacturer> ;
+                                                       <http://www.semanticweb.org/dataact#performsLegalAction> <http://www.semanticweb.org/dataact#dataProvision_robot1> ;
+                                                       rdfs:label "Robot Manufacturer" ;
+                                                       <https://w3c.github.io/dpv/2.2/dpv/#hasData> <http://www.semanticweb.org/dataact#robotData1> .
+
+
+###  http://www.semanticweb.org/dataact#tradeSecret_robotData1
+<http://www.semanticweb.org/dataact#tradeSecret_robotData1> rdf:type owl:NamedIndividual ,
+                                                                     <http://www.semanticweb.org/dataact#TradeSecretData> ;
+                                                            <http://www.semanticweb.org/dataact#hasDescription> "Contains sensitive specifications of industrial robot algorithms." ;
+                                                            rdfs:label "Trade Secret - Robot Data 1" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

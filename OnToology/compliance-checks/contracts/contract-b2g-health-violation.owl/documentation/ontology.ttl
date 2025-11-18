@@ -1,0 +1,235 @@
+@prefix : <http://www.semanticweb.org/dataact/contracts/b2g-health#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/dataact/contracts/b2g-health#> .
+
+<http://www.semanticweb.org/dataact/contracts/b2g-health> rdf:type owl:Ontology ;
+                                                           owl:imports <http://www.semanticweb.org/dataact> ;
+                                                           rdfs:comment """
+      ❌ VIOLATION scenario — Public authority used data to develop a competing product (Article 19(2)(a) violated).
+    """ ;
+                                                           rdfs:label "Public Health Emergency Data Sharing Contract (Violation)" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.semanticweb.org/dataact#agreementDate
+<http://www.semanticweb.org/dataact#agreementDate> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dataact#generatesData
+<http://www.semanticweb.org/dataact#generatesData> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dataact#governedBy
+<http://www.semanticweb.org/dataact#governedBy> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dataact#hasDeadline
+<http://www.semanticweb.org/dataact#hasDeadline> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dataact#hasDescription
+<http://www.semanticweb.org/dataact#hasDescription> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dataact#hasExceptionalNeedFor
+<http://www.semanticweb.org/dataact#hasExceptionalNeedFor> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dataact#isGeneratedBy
+<http://www.semanticweb.org/dataact#isGeneratedBy> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dataact#isMachineReadable
+<http://www.semanticweb.org/dataact#isMachineReadable> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dataact#isPersonal
+<http://www.semanticweb.org/dataact#isPersonal> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dataact#manufacturerIdentifier
+<http://www.semanticweb.org/dataact#manufacturerIdentifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dataact#ownsOrUses
+<http://www.semanticweb.org/dataact#ownsOrUses> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dataact#performsAction
+<http://www.semanticweb.org/dataact#performsAction> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dataact#productCategory
+<http://www.semanticweb.org/dataact#productCategory> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.semanticweb.org/dataact#respondsTo
+<http://www.semanticweb.org/dataact#respondsTo> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3c.github.io/dpv/2.2/dpv/#hasData
+<https://w3c.github.io/dpv/2.2/dpv/#hasData> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3c.github.io/dpv/2.2/dpv/#hasRecipient
+<https://w3c.github.io/dpv/2.2/dpv/#hasRecipient> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/dataact#B2GDataSharing
+<http://www.semanticweb.org/dataact#B2GDataSharing> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/dataact#ConnectedProduct
+<http://www.semanticweb.org/dataact#ConnectedProduct> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/dataact#ConsumerUser
+<http://www.semanticweb.org/dataact#ConsumerUser> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/dataact#DataHolder
+<http://www.semanticweb.org/dataact#DataHolder> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/dataact#DataRecipient
+<http://www.semanticweb.org/dataact#DataRecipient> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/dataact#DataRequest
+<http://www.semanticweb.org/dataact#DataRequest> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/dataact#DataSharingAgreement
+<http://www.semanticweb.org/dataact#DataSharingAgreement> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/dataact#ExceptionalNeed
+<http://www.semanticweb.org/dataact#ExceptionalNeed> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/dataact#Manufacturer
+<http://www.semanticweb.org/dataact#Manufacturer> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/dataact#ProductData
+<http://www.semanticweb.org/dataact#ProductData> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/dataact#PublicSectorBody
+<http://www.semanticweb.org/dataact#PublicSectorBody> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/dataact#UseDataToDevelopCompetingProduct
+<http://www.semanticweb.org/dataact#UseDataToDevelopCompetingProduct> rdf:type owl:Class .
+
+
+###  https://w3c.github.io/dpv/2.2/dpv/#PersonalData
+<https://w3c.github.io/dpv/2.2/dpv/#PersonalData> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/dataact#b2gDataRequest191
+<http://www.semanticweb.org/dataact#b2gDataRequest191> rdf:type owl:NamedIndividual ,
+                                                                <http://www.semanticweb.org/dataact#DataRequest> ;
+                                                       <http://www.semanticweb.org/dataact#hasDeadline> "2024-03-25"^^xsd:date ;
+                                                       <http://www.semanticweb.org/dataact#respondsTo> <http://www.semanticweb.org/dataact#publicHealthEmergency2024> ;
+                                                       rdfs:label "B2G Data Request 191" .
+
+
+###  http://www.semanticweb.org/dataact#b2gSharingGonzalo
+<http://www.semanticweb.org/dataact#b2gSharingGonzalo> rdf:type owl:NamedIndividual ,
+                                                                <http://www.semanticweb.org/dataact#B2GDataSharing> ;
+                                                       <http://www.semanticweb.org/dataact#governedBy> <http://www.semanticweb.org/dataact#contract191> ;
+                                                       rdfs:label "B2G Sharing - Gonzalo" .
+
+
+###  http://www.semanticweb.org/dataact#competitiveProductDevelopment1
+<http://www.semanticweb.org/dataact#competitiveProductDevelopment1> rdf:type owl:NamedIndividual ,
+                                                                             <http://www.semanticweb.org/dataact#UseDataToDevelopCompetingProduct> ;
+                                                                    <http://www.semanticweb.org/dataact#hasDescription> "Health authority used emergency data to develop a competing health app." ;
+                                                                    rdfs:comment "Prohibited under Article 19(2)(a)." ;
+                                                                    rdfs:label "Competitive Product Development 1" .
+
+
+###  http://www.semanticweb.org/dataact#contract191
+<http://www.semanticweb.org/dataact#contract191> rdf:type owl:NamedIndividual ,
+                                                          <http://www.semanticweb.org/dataact#DataSharingAgreement> ;
+                                                 <http://www.semanticweb.org/dataact#agreementDate> "2024-03-20T09:00:00Z"^^xsd:dateTime ;
+                                                 rdfs:label "Contract 191 - Public Health Emergency" ;
+                                                 <https://w3c.github.io/dpv/2.2/dpv/#hasRecipient> <http://www.semanticweb.org/dataact#healthAuthority> .
+
+
+###  http://www.semanticweb.org/dataact#gonzalo
+<http://www.semanticweb.org/dataact#gonzalo> rdf:type owl:NamedIndividual ,
+                                                      <http://www.semanticweb.org/dataact#ConsumerUser> ;
+                                             <http://www.semanticweb.org/dataact#ownsOrUses> <http://www.semanticweb.org/dataact#healthMonitor1> ;
+                                             rdfs:label "Gonzalo" .
+
+
+###  http://www.semanticweb.org/dataact#gonzaloHealthData
+<http://www.semanticweb.org/dataact#gonzaloHealthData> rdf:type owl:NamedIndividual ,
+                                                                <http://www.semanticweb.org/dataact#ProductData> ,
+                                                                <https://w3c.github.io/dpv/2.2/dpv/#PersonalData> ;
+                                                       <http://www.semanticweb.org/dataact#hasDescription> "Vital signs, disease indicators, health metrics for pandemic monitoring" ;
+                                                       <http://www.semanticweb.org/dataact#isGeneratedBy> <http://www.semanticweb.org/dataact#healthMonitor1> ;
+                                                       <http://www.semanticweb.org/dataact#isMachineReadable> "true"^^xsd:boolean ;
+                                                       <http://www.semanticweb.org/dataact#isPersonal> "true"^^xsd:boolean ;
+                                                       rdfs:label "Gonzalo Health Data" .
+
+
+###  http://www.semanticweb.org/dataact#healthAuthority
+<http://www.semanticweb.org/dataact#healthAuthority> rdf:type owl:NamedIndividual ,
+                                                              <http://www.semanticweb.org/dataact#DataRecipient> ,
+                                                              <http://www.semanticweb.org/dataact#PublicSectorBody> ;
+                                                     <http://www.semanticweb.org/dataact#hasExceptionalNeedFor> <http://www.semanticweb.org/dataact#gonzaloHealthData> ;
+                                                     <http://www.semanticweb.org/dataact#performsAction> <http://www.semanticweb.org/dataact#competitiveProductDevelopment1> ;
+                                                     rdfs:label "Health Authority" .
+
+
+###  http://www.semanticweb.org/dataact#healthDeviceManufacturer
+<http://www.semanticweb.org/dataact#healthDeviceManufacturer> rdf:type owl:NamedIndividual ,
+                                                                       <http://www.semanticweb.org/dataact#DataHolder> ,
+                                                                       <http://www.semanticweb.org/dataact#Manufacturer> ;
+                                                              rdfs:label "Health Device Manufacturer" ;
+                                                              <https://w3c.github.io/dpv/2.2/dpv/#hasData> <http://www.semanticweb.org/dataact#gonzaloHealthData> ;
+                                                              <https://w3c.github.io/dpv/2.2/dpv/#hasRecipient> <http://www.semanticweb.org/dataact#healthAuthority> .
+
+
+###  http://www.semanticweb.org/dataact#healthMonitor1
+<http://www.semanticweb.org/dataact#healthMonitor1> rdf:type owl:NamedIndividual ,
+                                                             <http://www.semanticweb.org/dataact#ConnectedProduct> ;
+                                                    <http://www.semanticweb.org/dataact#generatesData> <http://www.semanticweb.org/dataact#gonzaloHealthData> ;
+                                                    <http://www.semanticweb.org/dataact#manufacturerIdentifier> "HEALTH-MON-2024-GZ" ;
+                                                    <http://www.semanticweb.org/dataact#productCategory> "Medical Device" ;
+                                                    rdfs:label "Health Monitor 1" .
+
+
+###  http://www.semanticweb.org/dataact#publicHealthEmergency2024
+<http://www.semanticweb.org/dataact#publicHealthEmergency2024> rdf:type owl:NamedIndividual ,
+                                                                        <http://www.semanticweb.org/dataact#ExceptionalNeed> ;
+                                                               <http://www.semanticweb.org/dataact#hasDescription> "Pandemic monitoring and public health response coordination" ;
+                                                               rdfs:label "Public Health Emergency 2024" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

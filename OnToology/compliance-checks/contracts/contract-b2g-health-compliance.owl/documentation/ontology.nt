@@ -1,0 +1,190 @@
+<http://www.semanticweb.org/dataact/contracts/b2g-health> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/dataact/contracts/b2g-health> <http://www.w3.org/2002/07/owl#imports> <http://www.semanticweb.org/dataact> .
+<http://www.semanticweb.org/dataact/contracts/b2g-health> <http://www.w3.org/2000/01/rdf-schema#comment> "\n      ✅ COMPLIANT scenario — Public authority uses data under exceptional need only (Article 19(2)(a) respected).\n    " .
+<http://www.semanticweb.org/dataact/contracts/b2g-health> <http://www.w3.org/2000/01/rdf-schema#label> "Public Health Emergency Data Sharing Contract (Compliant)" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/dataact#agreementDate
+<http://www.semanticweb.org/dataact#agreementDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.semanticweb.org/dataact#generatesData
+<http://www.semanticweb.org/dataact#generatesData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.semanticweb.org/dataact#governedBy
+<http://www.semanticweb.org/dataact#governedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.semanticweb.org/dataact#hasDeadline
+<http://www.semanticweb.org/dataact#hasDeadline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.semanticweb.org/dataact#hasDescription
+<http://www.semanticweb.org/dataact#hasDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.semanticweb.org/dataact#hasExceptionalNeedFor
+<http://www.semanticweb.org/dataact#hasExceptionalNeedFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.semanticweb.org/dataact#isGeneratedBy
+<http://www.semanticweb.org/dataact#isGeneratedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.semanticweb.org/dataact#isMachineReadable
+<http://www.semanticweb.org/dataact#isMachineReadable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.semanticweb.org/dataact#isPersonal
+<http://www.semanticweb.org/dataact#isPersonal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.semanticweb.org/dataact#manufacturerIdentifier
+<http://www.semanticweb.org/dataact#manufacturerIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.semanticweb.org/dataact#ownsOrUses
+<http://www.semanticweb.org/dataact#ownsOrUses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.semanticweb.org/dataact#productCategory
+<http://www.semanticweb.org/dataact#productCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.semanticweb.org/dataact#respondsTo
+<http://www.semanticweb.org/dataact#respondsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3c.github.io/dpv/2.2/dpv/#hasData
+<https://w3c.github.io/dpv/2.2/dpv/#hasData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3c.github.io/dpv/2.2/dpv/#hasRecipient
+<https://w3c.github.io/dpv/2.2/dpv/#hasRecipient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/dataact#B2GDataSharing
+<http://www.semanticweb.org/dataact#B2GDataSharing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/dataact#ConnectedProduct
+<http://www.semanticweb.org/dataact#ConnectedProduct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/dataact#ConsumerUser
+<http://www.semanticweb.org/dataact#ConsumerUser> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/dataact#DataHolder
+<http://www.semanticweb.org/dataact#DataHolder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/dataact#DataRecipient
+<http://www.semanticweb.org/dataact#DataRecipient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/dataact#DataRequest
+<http://www.semanticweb.org/dataact#DataRequest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/dataact#DataSharingAgreement
+<http://www.semanticweb.org/dataact#DataSharingAgreement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/dataact#ExceptionalNeed
+<http://www.semanticweb.org/dataact#ExceptionalNeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/dataact#Manufacturer
+<http://www.semanticweb.org/dataact#Manufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/dataact#ProductData
+<http://www.semanticweb.org/dataact#ProductData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/dataact#PublicSectorBody
+<http://www.semanticweb.org/dataact#PublicSectorBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3c.github.io/dpv/2.2/dpv/#PersonalData
+<https://w3c.github.io/dpv/2.2/dpv/#PersonalData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/dataact#b2gDataRequest191
+<http://www.semanticweb.org/dataact#b2gDataRequest191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/dataact#b2gDataRequest191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/dataact#DataRequest> .
+<http://www.semanticweb.org/dataact#b2gDataRequest191> <http://www.semanticweb.org/dataact#hasDeadline> "2024-03-25"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.semanticweb.org/dataact#b2gDataRequest191> <http://www.semanticweb.org/dataact#respondsTo> <http://www.semanticweb.org/dataact#publicHealthEmergency2024> .
+<http://www.semanticweb.org/dataact#b2gDataRequest191> <http://www.w3.org/2000/01/rdf-schema#label> "B2G Data Request 191" .
+# 
+# http://www.semanticweb.org/dataact#b2gSharingGonzalo
+<http://www.semanticweb.org/dataact#b2gSharingGonzalo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/dataact#b2gSharingGonzalo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/dataact#B2GDataSharing> .
+<http://www.semanticweb.org/dataact#b2gSharingGonzalo> <http://www.semanticweb.org/dataact#governedBy> <http://www.semanticweb.org/dataact#contract191> .
+<http://www.semanticweb.org/dataact#b2gSharingGonzalo> <http://www.w3.org/2000/01/rdf-schema#label> "B2G Sharing - Gonzalo" .
+# 
+# http://www.semanticweb.org/dataact#contract191
+<http://www.semanticweb.org/dataact#contract191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/dataact#contract191> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/dataact#DataSharingAgreement> .
+<http://www.semanticweb.org/dataact#contract191> <http://www.semanticweb.org/dataact#agreementDate> "2024-03-20T09:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/dataact#contract191> <http://www.w3.org/2000/01/rdf-schema#label> "Contract 191 - Public Health Emergency" .
+<http://www.semanticweb.org/dataact#contract191> <https://w3c.github.io/dpv/2.2/dpv/#hasRecipient> <http://www.semanticweb.org/dataact#healthAuthority> .
+# 
+# http://www.semanticweb.org/dataact#gonzalo
+<http://www.semanticweb.org/dataact#gonzalo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/dataact#gonzalo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/dataact#ConsumerUser> .
+<http://www.semanticweb.org/dataact#gonzalo> <http://www.semanticweb.org/dataact#ownsOrUses> <http://www.semanticweb.org/dataact#healthMonitor1> .
+<http://www.semanticweb.org/dataact#gonzalo> <http://www.w3.org/2000/01/rdf-schema#label> "Gonzalo" .
+# 
+# http://www.semanticweb.org/dataact#gonzaloHealthData
+<http://www.semanticweb.org/dataact#gonzaloHealthData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/dataact#gonzaloHealthData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/dataact#ProductData> .
+<http://www.semanticweb.org/dataact#gonzaloHealthData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3c.github.io/dpv/2.2/dpv/#PersonalData> .
+<http://www.semanticweb.org/dataact#gonzaloHealthData> <http://www.semanticweb.org/dataact#hasDescription> "Vital signs, disease indicators, health metrics for pandemic monitoring" .
+<http://www.semanticweb.org/dataact#gonzaloHealthData> <http://www.semanticweb.org/dataact#isGeneratedBy> <http://www.semanticweb.org/dataact#healthMonitor1> .
+<http://www.semanticweb.org/dataact#gonzaloHealthData> <http://www.semanticweb.org/dataact#isMachineReadable> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/dataact#gonzaloHealthData> <http://www.semanticweb.org/dataact#isPersonal> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/dataact#gonzaloHealthData> <http://www.w3.org/2000/01/rdf-schema#label> "Gonzalo Health Data" .
+# 
+# http://www.semanticweb.org/dataact#healthAuthority
+<http://www.semanticweb.org/dataact#healthAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/dataact#healthAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/dataact#DataRecipient> .
+<http://www.semanticweb.org/dataact#healthAuthority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/dataact#PublicSectorBody> .
+<http://www.semanticweb.org/dataact#healthAuthority> <http://www.semanticweb.org/dataact#hasExceptionalNeedFor> <http://www.semanticweb.org/dataact#gonzaloHealthData> .
+<http://www.semanticweb.org/dataact#healthAuthority> <http://www.w3.org/2000/01/rdf-schema#label> "Health Authority" .
+# 
+# http://www.semanticweb.org/dataact#healthDeviceManufacturer
+<http://www.semanticweb.org/dataact#healthDeviceManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/dataact#healthDeviceManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/dataact#DataHolder> .
+<http://www.semanticweb.org/dataact#healthDeviceManufacturer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/dataact#Manufacturer> .
+<http://www.semanticweb.org/dataact#healthDeviceManufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "Health Device Manufacturer" .
+<http://www.semanticweb.org/dataact#healthDeviceManufacturer> <https://w3c.github.io/dpv/2.2/dpv/#hasData> <http://www.semanticweb.org/dataact#gonzaloHealthData> .
+<http://www.semanticweb.org/dataact#healthDeviceManufacturer> <https://w3c.github.io/dpv/2.2/dpv/#hasRecipient> <http://www.semanticweb.org/dataact#healthAuthority> .
+# 
+# http://www.semanticweb.org/dataact#healthMonitor1
+<http://www.semanticweb.org/dataact#healthMonitor1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/dataact#healthMonitor1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/dataact#ConnectedProduct> .
+<http://www.semanticweb.org/dataact#healthMonitor1> <http://www.semanticweb.org/dataact#generatesData> <http://www.semanticweb.org/dataact#gonzaloHealthData> .
+<http://www.semanticweb.org/dataact#healthMonitor1> <http://www.semanticweb.org/dataact#manufacturerIdentifier> "HEALTH-MON-2024-GZ" .
+<http://www.semanticweb.org/dataact#healthMonitor1> <http://www.semanticweb.org/dataact#productCategory> "Medical Device" .
+<http://www.semanticweb.org/dataact#healthMonitor1> <http://www.w3.org/2000/01/rdf-schema#label> "Health Monitor 1" .
+# 
+# http://www.semanticweb.org/dataact#publicHealthEmergency2024
+<http://www.semanticweb.org/dataact#publicHealthEmergency2024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/dataact#publicHealthEmergency2024> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/dataact#ExceptionalNeed> .
+<http://www.semanticweb.org/dataact#publicHealthEmergency2024> <http://www.semanticweb.org/dataact#hasDescription> "Pandemic monitoring and public health response coordination" .
+<http://www.semanticweb.org/dataact#publicHealthEmergency2024> <http://www.w3.org/2000/01/rdf-schema#label> "Public Health Emergency 2024" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

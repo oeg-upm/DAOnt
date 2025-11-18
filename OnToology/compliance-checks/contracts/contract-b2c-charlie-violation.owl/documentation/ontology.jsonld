@@ -1,0 +1,200 @@
+[ {
+  "@id" : "http://www.semanticweb.org/dataact#Article4_1_DataAct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/dataact#hasArticleNumber" : [ {
+    "@value" : "4(1)"
+  } ],
+  "http://www.semanticweb.org/dataact#hasLegalSource" : [ {
+    "@value" : "Regulation (EU) 2023/2854 – Data Act"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/dataact#LegalReference"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Article 4(1) – User Access Rights"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#B2CDataSharing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#ConnectedProduct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#ConsumerUser",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#DataHolder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#DataSharingAgreement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#LegalReference",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#Manufacturer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#ProductData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#agreementDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#b2cSharing_charlie",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/dataact#governedBy" : [ {
+    "@id" : "http://www.semanticweb.org/dataact#contract_charlie"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/dataact#B2CDataSharing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "B2C Sharing - Charlie"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#charlie",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/dataact#ownsOrUses" : [ {
+    "@id" : "http://www.semanticweb.org/dataact#smartWatch1"
+  } ],
+  "http://www.semanticweb.org/dataact#requestsAccessTo" : [ {
+    "@id" : "http://www.semanticweb.org/dataact#charlieHealthData"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/dataact#ConsumerUser"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Charlie"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#charlieHealthData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/dataact#hasDescription" : [ {
+    "@value" : "Heart rate, steps, sleep patterns, activity data"
+  } ],
+  "http://www.semanticweb.org/dataact#isGeneratedBy" : [ {
+    "@id" : "http://www.semanticweb.org/dataact#smartWatch1"
+  } ],
+  "http://www.semanticweb.org/dataact#isMachineReadable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/dataact#isPersonal" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/dataact#ProductData"
+  }, {
+    "@id" : "https://w3c.github.io/dpv/2.2/dpv/#PersonalData"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Charlie Health Data"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#contract_charlie",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/dataact#agreementDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-01-15T10:00:00Z"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/dataact#DataSharingAgreement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Charlie's Smart Watch Contract"
+  } ],
+  "https://w3c.github.io/dpv/2.2/dpv/#hasRecipient" : [ {
+    "@id" : "http://www.semanticweb.org/dataact#charlie"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#generatesData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#governedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#hasArticleNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#hasDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#hasLegalSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#isGeneratedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#isMachineReadable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#isPersonal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#manufacturerIdentifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#ownsOrUses",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#productCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#requestsAccessTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#smartWatch1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/dataact#generatesData" : [ {
+    "@id" : "http://www.semanticweb.org/dataact#charlieHealthData"
+  } ],
+  "http://www.semanticweb.org/dataact#manufacturerIdentifier" : [ {
+    "@value" : "WATCH-2024-CH001"
+  } ],
+  "http://www.semanticweb.org/dataact#productCategory" : [ {
+    "@value" : "Wearable Health Device"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/dataact#ConnectedProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Smart Watch 1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#watchManufacturer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/dataact#DataHolder"
+  }, {
+    "@id" : "http://www.semanticweb.org/dataact#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Watch Manufacturer"
+  } ],
+  "https://w3c.github.io/dpv/2.2/dpv/#hasData" : [ {
+    "@id" : "http://www.semanticweb.org/dataact#charlieHealthData"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact/contracts/b2c-charlie",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "\n      ❌ VIOLATION scenario — Manufacturer does NOT perform DataProvision action (Article 4(1) violated).\n    "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Charlie's Smart Watch Contract (Violation)"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://www.semanticweb.org/dataact"
+  } ]
+}, {
+  "@id" : "https://w3c.github.io/dpv/2.2/dpv/#PersonalData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3c.github.io/dpv/2.2/dpv/#hasData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3c.github.io/dpv/2.2/dpv/#hasRecipient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

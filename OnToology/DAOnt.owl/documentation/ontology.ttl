@@ -1,0 +1,1557 @@
+@prefix : <https://w3id.org/def/DAOnt#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/def/DAOnt#> .
+
+<https://w3id.org/def/DAOnt> rdf:type owl:Ontology ;
+                              <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by-sa/4.0/> ;
+                              <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by-sa/4.0/> ;
+                              rdfs:comment "Comprehensive Ontology for the EU Data Act (Regulation 2023/2854)" ;
+                              rdfs:label "EU Data Act Ontology" ;
+                              owl:versionInfo "2.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#member
+<http://www.w3.org/2004/02/skos/core#member> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#scopeNote
+<http://www.w3.org/2004/02/skos/core#scopeNote> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/DAOnt#legalEffect
+:legalEffect rdf:type owl:AnnotationProperty ;
+             rdfs:comment "Legal effect description" ;
+             rdfs:label "legal effect" .
+
+
+###  https://w3id.org/def/DAOnt#legalSource
+:legalSource rdf:type owl:AnnotationProperty ;
+             rdfs:comment "Reference to legal document or provision" ;
+             rdfs:label "legal source" .
+
+
+###  https://w3id.org/def/DAOnt#qualifiedBy
+:qualifiedBy rdf:type owl:AnnotationProperty ;
+             rdfs:comment "Qualification or condition" ;
+             rdfs:label "qualified by" .
+
+
+###  https://w3id.org/def/DAOnt#ruleSource
+:ruleSource rdf:type owl:AnnotationProperty ;
+            rdfs:comment "Reference to specific article or recital" ;
+            rdfs:label "rule source" .
+
+
+###  https://w3id.org/def/DAOnt#temporalExtent
+:temporalExtent rdf:type owl:AnnotationProperty ;
+                rdfs:comment "Temporal period during which something holds" ;
+                rdfs:label "temporal extent" .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#duration
+xsd:duration rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.estrellaproject.org/lkif-core/expression.owl#qualifies
+<http://www.estrellaproject.org/lkif-core/expression.owl#qualifies> rdf:type owl:ObjectProperty ;
+                                                                    rdfs:domain :Qualification ;
+                                                                    rdfs:range <http://www.estrellaproject.org/lkif-core/norm.owl#Right> ;
+                                                                    rdfs:comment "LKIF: Adds qualification to norm or right" ;
+                                                                    rdfs:label "qualifies" .
+
+
+###  http://www.estrellaproject.org/lkif-core/role.owl#plays
+<http://www.estrellaproject.org/lkif-core/role.owl#plays> rdf:type owl:ObjectProperty ;
+                                                          rdfs:domain <https://www.w3.org/ns/odrl/2/Party> ;
+                                                          rdfs:range :LegalRelationship ;
+                                                          rdfs:comment "Specifies that some thing plays a role" ;
+                                                          rdfs:label "plays role in" .
+
+
+###  http://www.w3.org/ns/prov#wasDerivedFrom
+<http://www.w3.org/ns/prov#wasDerivedFrom> rdf:type owl:ObjectProperty ;
+                                           rdfs:comment "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity." ;
+                                           rdfs:label "was derived from" .
+
+
+###  https://w3c.github.io/dpv/2.2/dpv/#hasData
+<https://w3c.github.io/dpv/2.2/dpv/#hasData> rdf:type owl:ObjectProperty ;
+                                             rdfs:domain :DataHolder ;
+                                             rdfs:range :Data ;
+                                             rdfs:comment "Article 2(13) - Data holder has rights to control access to data" ;
+                                             rdfs:label "has data" .
+
+
+###  https://w3c.github.io/dpv/2.2/dpv/#hasDataSubject
+<https://w3c.github.io/dpv/2.2/dpv/#hasDataSubject> rdf:type owl:ObjectProperty ;
+                                                    owl:inverseOf :isSubjectOf ;
+                                                    rdfs:domain <https://w3c.github.io/dpv/2.2/dpv/#PersonalData> ;
+                                                    rdfs:range <https://w3c.github.io/dpv/2.2/dpv/#DataSubject> ;
+                                                    rdfs:comment "Indicates association with Data Subject" ;
+                                                    rdfs:label "has data subject" .
+
+
+###  https://w3c.github.io/dpv/2.2/dpv/#hasPurpose
+<https://w3c.github.io/dpv/2.2/dpv/#hasPurpose> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <https://www.w3.org/ns/odrl/2/Party> ;
+                                                rdfs:range <https://www.w3.org/ns/odrl/2/purpose> ;
+                                                rdfs:comment "Indicates association with Purpose" ;
+                                                rdfs:label "has purpose" .
+
+
+###  https://w3c.github.io/dpv/2.2/dpv/#hasRecipient
+<https://w3c.github.io/dpv/2.2/dpv/#hasRecipient> rdf:type owl:ObjectProperty ;
+                                                  owl:inverseOf :receivesDataFrom ;
+                                                  rdfs:domain :DataHolder ;
+                                                  rdfs:range <https://www.w3.org/ns/odrl/2/Party> ;
+                                                  rdfs:comment "Article 5 and Article 8 - Data provision to recipients" ;
+                                                  rdfs:label "has recipient" ;
+                                                  <http://www.w3.org/2004/02/skos/core#altLabel> "provides data to" .
+
+
+###  https://w3id.org/def/DAOnt#actsOnBehalfOf
+:actsOnBehalfOf rdf:type owl:ObjectProperty ;
+                rdfs:domain :DataIntermediationService ;
+                rdfs:range :User ;
+                rdfs:comment "Recitals 29-33 - Intermediary may exercise user rights" ;
+                rdfs:label "acts on behalf of" .
+
+
+###  https://w3id.org/def/DAOnt#authorizedBy
+:authorizedBy rdf:type owl:ObjectProperty ;
+              rdfs:domain :DataSharing ;
+              rdfs:range :User ;
+              rdfs:comment "Article 8(4) - B2B data sharing must be authorized by the user" ;
+              rdfs:label "authorized by" .
+
+
+###  https://w3id.org/def/DAOnt#classifiedAs
+:classifiedAs rdf:type owl:ObjectProperty ;
+              rdfs:domain :Data ;
+              rdfs:range :DataCategory ;
+              rdfs:label "classified as" .
+
+
+###  https://w3id.org/def/DAOnt#compliesWith
+:compliesWith rdf:type owl:ObjectProperty ;
+              rdfs:domain :DataProcessingService ;
+              rdfs:range :InteroperabilityStandard ;
+              rdfs:comment "Article 34-35 - Interoperability compliance" ;
+              rdfs:label "complies with" .
+
+
+###  https://w3id.org/def/DAOnt#createsDuty
+:createsDuty rdf:type owl:ObjectProperty ;
+             rdfs:domain :LegalAction ;
+             rdfs:range <https://www.w3.org/ns/odrl/2/Duty> ;
+             rdfs:label "creates duty" .
+
+
+###  https://w3id.org/def/DAOnt#createsRight
+:createsRight rdf:type owl:ObjectProperty ;
+              rdfs:domain :LegalAction ;
+              rdfs:range <http://www.estrellaproject.org/lkif-core/norm.owl#Right> ;
+              rdfs:label "creates right" .
+
+
+###  https://w3id.org/def/DAOnt#derivesFrom
+:derivesFrom rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf <http://www.w3.org/ns/prov#wasDerivedFrom> ;
+             rdfs:domain :LegalRule ;
+             rdfs:range :LegalSource ;
+             rdfs:comment "Links rule to its legal source (article, regulation)" ;
+             rdfs:label "derives from" .
+
+
+###  https://w3id.org/def/DAOnt#designatesThirdParty
+:designatesThirdParty rdf:type owl:ObjectProperty ;
+                      rdfs:domain :User ;
+                      rdfs:range :ThirdParty ;
+                      rdfs:comment "Article 5(1) - User can designate a third party to receive data" ;
+                      rdfs:label "designates third party" .
+
+
+###  https://w3id.org/def/DAOnt#fulfillsActionCondition
+:fulfillsActionCondition rdf:type owl:ObjectProperty ;
+                         rdfs:domain <https://www.w3.org/ns/odrl/2/Action> ;
+                         rdfs:range :ActionCondition ;
+                         rdfs:label "fulfills action condition" .
+
+
+###  https://w3id.org/def/DAOnt#fulfillsDataContentCondition
+:fulfillsDataContentCondition rdf:type owl:ObjectProperty ;
+                              rdfs:domain :Data ;
+                              rdfs:range :DataContentCondition ;
+                              rdfs:label "fulfills data content condition" .
+
+
+###  https://w3id.org/def/DAOnt#generatesData
+:generatesData rdf:type owl:ObjectProperty ;
+               owl:inverseOf :isGeneratedBy ;
+               rdfs:domain :ConnectedProduct ;
+               rdfs:range :Data ;
+               rdfs:comment "Product generates data during use" ;
+               rdfs:label "generates data" .
+
+
+###  https://w3id.org/def/DAOnt#governedBy
+:governedBy rdf:type owl:ObjectProperty ;
+            rdfs:domain :DataSharing ;
+            rdfs:range <https://www.w3.org/ns/odrl/2/Agreement> ;
+            rdfs:label "governed by" .
+
+
+###  https://w3id.org/def/DAOnt#governedByAgreement
+:governedByAgreement rdf:type owl:ObjectProperty ;
+                     rdfs:domain <https://www.w3.org/ns/odrl/2/Party> ;
+                     rdfs:range <https://www.w3.org/ns/odrl/2/Agreement> ;
+                     rdfs:comment "Contract governs relationship" ;
+                     rdfs:label "governed by agreement" .
+
+
+###  https://w3id.org/def/DAOnt#grantsAccessTo
+:grantsAccessTo rdf:type owl:ObjectProperty ;
+                rdfs:domain :DataHolder ;
+                rdfs:range :DataRecipient ;
+                rdfs:label "grants access to" .
+
+
+###  https://w3id.org/def/DAOnt#hasAccessRight
+:hasAccessRight rdf:type owl:ObjectProperty ;
+                rdfs:domain :User ;
+                rdfs:range :DataAccessRight ;
+                rdfs:comment "Article 4 - Users have rights to access data generated by their products" ;
+                rdfs:label "has access right" .
+
+
+###  https://w3id.org/def/DAOnt#hasAntecedent
+:hasAntecedent rdf:type owl:ObjectProperty ;
+               rdfs:domain :LegalRule ;
+               rdfs:range :RuleCondition ;
+               rdfs:comment "Condition that triggers the rule (IF part)" ;
+               rdfs:label "has antecedent" .
+
+
+###  https://w3id.org/def/DAOnt#hasBeneficiary
+:hasBeneficiary rdf:type owl:ObjectProperty ;
+                rdfs:domain <https://www.w3.org/ns/odrl/2/Rule> ;
+                rdfs:range <https://www.w3.org/ns/odrl/2/Party> ;
+                rdfs:comment "Actor benefiting from the deontic" ;
+                rdfs:label "has beneficiary" .
+
+
+###  https://w3id.org/def/DAOnt#hasConsequent
+:hasConsequent rdf:type owl:ObjectProperty ;
+               rdfs:domain :LegalRule ;
+               rdfs:range :LegalEffect ;
+               rdfs:comment "Effect when antecedent is satisfied (THEN part)" ;
+               rdfs:label "has consequent" .
+
+
+###  https://w3id.org/def/DAOnt#hasCounterparty
+:hasCounterparty rdf:type owl:ObjectProperty ;
+                 rdfs:domain :LegalRelationship ;
+                 rdfs:range <https://www.w3.org/ns/odrl/2/Party> ;
+                 rdfs:label "has counterparty" .
+
+
+###  https://w3id.org/def/DAOnt#hasDeonticSpecification
+:hasDeonticSpecification rdf:type owl:ObjectProperty ;
+                         rdfs:domain :LegalRule ;
+                         rdfs:range <https://www.w3.org/ns/odrl/2/Rule> ;
+                         rdfs:comment "Obligation, permission, or prohibition" ;
+                         rdfs:label "has deontic specification" .
+
+
+###  https://w3id.org/def/DAOnt#hasDutyBearer
+:hasDutyBearer rdf:type owl:ObjectProperty ;
+               rdfs:domain <https://www.w3.org/ns/odrl/2/Duty> ;
+               rdfs:range <https://www.w3.org/ns/odrl/2/Party> ;
+               rdfs:label "has duty bearer" .
+
+
+###  https://w3id.org/def/DAOnt#hasException
+:hasException rdf:type owl:ObjectProperty ;
+              rdfs:domain :LegalRule ;
+              rdfs:range :RuleCondition ;
+              rdfs:comment "Exception to rule application" ;
+              rdfs:label "has exception" .
+
+
+###  https://w3id.org/def/DAOnt#hasExceptionalNeedFor
+:hasExceptionalNeedFor rdf:type owl:ObjectProperty ;
+                       rdfs:domain :PublicSectorBody ;
+                       rdfs:range :Data ;
+                       rdfs:comment "Article 14-15 - B2G request basis" ;
+                       rdfs:label "has exceptional need for" .
+
+
+###  https://w3id.org/def/DAOnt#hasObligation
+:hasObligation rdf:type owl:ObjectProperty ;
+               rdfs:domain :DataHolder ;
+               rdfs:range <https://www.w3.org/ns/odrl/2/Duty> ;
+               rdfs:label "has obligation" .
+
+
+###  https://w3id.org/def/DAOnt#hasParticipant
+:hasParticipant rdf:type owl:ObjectProperty ;
+                rdfs:domain :LegalAction ;
+                rdfs:range <https://www.w3.org/ns/odrl/2/Party> ;
+                rdfs:label "has participant" .
+
+
+###  https://w3id.org/def/DAOnt#hasPartyCategory
+:hasPartyCategory rdf:type owl:ObjectProperty ;
+                  rdfs:domain <https://www.w3.org/ns/odrl/2/Party> ;
+                  rdfs:range :PartyCategory ;
+                  rdfs:label "has party category" .
+
+
+###  https://w3id.org/def/DAOnt#hasRightHolder
+:hasRightHolder rdf:type owl:ObjectProperty ;
+                rdfs:domain <http://www.estrellaproject.org/lkif-core/norm.owl#Right> ;
+                rdfs:range <https://www.w3.org/ns/odrl/2/Party> ;
+                rdfs:label "has right holder" .
+
+
+###  https://w3id.org/def/DAOnt#hasTerm
+:hasTerm rdf:type owl:ObjectProperty ;
+         rdfs:domain <https://www.w3.org/ns/odrl/2/Agreement> ;
+         rdfs:range :ContractualTerm ;
+         rdfs:label "has term" .
+
+
+###  https://w3id.org/def/DAOnt#implementedBy
+:implementedBy rdf:type owl:ObjectProperty ;
+               rdfs:domain :SmartContract ;
+               rdfs:range :DataProcessingService ;
+               rdfs:comment "Article 36 - Smart contract executed by DPS" ;
+               rdfs:label "implemented by" .
+
+
+###  https://w3id.org/def/DAOnt#involvesProcessingService
+:involvesProcessingService rdf:type owl:ObjectProperty ;
+                           rdfs:domain :Data ;
+                           rdfs:range :DataProcessingService ;
+                           rdfs:comment "Cloud involvement in data processing" ;
+                           rdfs:label "involves processing service" .
+
+
+###  https://w3id.org/def/DAOnt#isGeneratedBy
+:isGeneratedBy rdf:type owl:ObjectProperty ;
+               rdfs:domain :Data ;
+               rdfs:range :ConnectedProduct ;
+               rdfs:label "is generated by" .
+
+
+###  https://w3id.org/def/DAOnt#isSubjectOf
+:isSubjectOf rdf:type owl:ObjectProperty ;
+             rdfs:domain <https://w3c.github.io/dpv/2.2/dpv/#DataSubject> ;
+             rdfs:range <https://w3c.github.io/dpv/2.2/dpv/#PersonalData> ;
+             rdfs:label "is subject of" .
+
+
+###  https://w3id.org/def/DAOnt#modifies
+:modifies rdf:type owl:ObjectProperty ;
+          rdfs:domain :LegalAction ;
+          rdfs:range :LegalRelationship ;
+          rdfs:label "modifies" .
+
+
+###  https://w3id.org/def/DAOnt#occursAt
+:occursAt rdf:type owl:ObjectProperty ;
+          rdfs:domain :LegalAction ;
+          rdfs:range :TemporalEntity ;
+          rdfs:label "occurs at" .
+
+
+###  https://w3id.org/def/DAOnt#owns
+:owns rdf:type owl:ObjectProperty ;
+      rdfs:domain :User ;
+      rdfs:range :ConnectedProduct ;
+      rdfs:comment "Article 2(12) - Ownership" ;
+      rdfs:label "owns" .
+
+
+###  https://w3id.org/def/DAOnt#participatesIn
+:participatesIn rdf:type owl:ObjectProperty ;
+                rdfs:domain <https://www.w3.org/ns/odrl/2/Party> ;
+                rdfs:range :DataSpace ;
+                rdfs:comment "Article 33 - Participation in data space" ;
+                rdfs:label "participates in" .
+
+
+###  https://w3id.org/def/DAOnt#performsAction
+:performsAction rdf:type owl:ObjectProperty ;
+                rdfs:domain <https://www.w3.org/ns/odrl/2/Party> ;
+                rdfs:range <https://www.w3.org/ns/odrl/2/Action> ;
+                rdfs:label "performs action" .
+
+
+###  https://w3id.org/def/DAOnt#performsLegalAction
+:performsLegalAction rdf:type owl:ObjectProperty ;
+                     rdfs:domain <https://www.w3.org/ns/odrl/2/Party> ;
+                     rdfs:range :LegalAction ;
+                     rdfs:label "performs legal action" .
+
+
+###  https://w3id.org/def/DAOnt#permits
+:permits rdf:type owl:ObjectProperty ;
+         rdfs:domain :LegalRule ;
+         rdfs:range <https://www.w3.org/ns/odrl/2/Permission> ;
+         rdfs:comment "Rule grants a permission" ;
+         rdfs:label "permits" .
+
+
+###  https://w3id.org/def/DAOnt#prescribes
+:prescribes rdf:type owl:ObjectProperty ;
+            rdfs:domain :LegalRule ;
+            rdfs:range <https://www.w3.org/ns/odrl/2/Duty> ;
+            rdfs:comment "Rule creates an obligation" ;
+            rdfs:label "prescribes" .
+
+
+###  https://w3id.org/def/DAOnt#presupposesAction
+:presupposesAction rdf:type owl:ObjectProperty ;
+                   rdfs:domain :ActionCondition ;
+                   rdfs:range <https://www.w3.org/ns/odrl/2/Action> ;
+                   rdfs:label "presupposes action" .
+
+
+###  https://w3id.org/def/DAOnt#presupposesDataContent
+:presupposesDataContent rdf:type owl:ObjectProperty ;
+                        rdfs:domain :DataContentCondition ;
+                        rdfs:range :Data ;
+                        rdfs:label "presupposes data content" .
+
+
+###  https://w3id.org/def/DAOnt#prohibits
+:prohibits rdf:type owl:ObjectProperty ;
+           rdfs:domain :LegalRule ;
+           rdfs:range <https://www.w3.org/ns/odrl/2/Prohibition> ;
+           rdfs:comment "Rule establishes a prohibition" ;
+           rdfs:label "prohibits" .
+
+
+###  https://w3id.org/def/DAOnt#providesConsentFor
+:providesConsentFor rdf:type owl:ObjectProperty ;
+                    rdfs:domain <https://w3c.github.io/dpv/2.2/dpv/#DataSubject> ;
+                    rdfs:range <https://w3c.github.io/dpv/2.2/dpv/#Consent> ;
+                    rdfs:label "provides consent for" .
+
+
+###  https://w3id.org/def/DAOnt#providesRelatedService
+:providesRelatedService rdf:type owl:ObjectProperty ;
+                        rdfs:domain :ConnectedProduct ;
+                        rdfs:range :RelatedService ;
+                        rdfs:comment "Product linked to related service" ;
+                        rdfs:label "provides related service" .
+
+
+###  https://w3id.org/def/DAOnt#receivesDataFrom
+:receivesDataFrom rdf:type owl:ObjectProperty ;
+                  rdfs:domain <https://www.w3.org/ns/odrl/2/Party> ;
+                  rdfs:range :DataHolder ;
+                  rdfs:label "receives data from" .
+
+
+###  https://w3id.org/def/DAOnt#requestsAccessFrom
+:requestsAccessFrom rdf:type owl:ObjectProperty ;
+                    rdfs:domain :DataRecipient ;
+                    rdfs:range :DataHolder ;
+                    rdfs:comment "Article 8(1) - Data recipient can request access to data" ;
+                    rdfs:label "requests access from" .
+
+
+###  https://w3id.org/def/DAOnt#requestsAccessTo
+:requestsAccessTo rdf:type owl:ObjectProperty ;
+                  rdfs:domain :User ;
+                  rdfs:range :Data ;
+                  rdfs:comment "Article 4 - User requests access to their data" ;
+                  rdfs:label "requests access to" .
+
+
+###  https://w3id.org/def/DAOnt#respondsTo
+:respondsTo rdf:type owl:ObjectProperty ;
+            rdfs:domain :DataRequest ;
+            rdfs:range :ExceptionalNeed ;
+            rdfs:comment "Links B2G request to justification" ;
+            rdfs:label "responds to" .
+
+
+###  https://w3id.org/def/DAOnt#subjectToFRAND
+:subjectToFRAND rdf:type owl:ObjectProperty ;
+                rdfs:domain <https://www.w3.org/ns/odrl/2/Agreement> ;
+                rdfs:range :FRANDCondition ;
+                rdfs:comment "Article 8-12 - FRAND conditions in B2B" ;
+                rdfs:label "subject to FRAND" .
+
+
+###  https://w3id.org/def/DAOnt#terminatedBy
+:terminatedBy rdf:type owl:ObjectProperty ;
+              rdfs:domain :LegalRelationship ;
+              rdfs:range :LegalAction ;
+              rdfs:label "terminated by" .
+
+
+###  https://w3id.org/def/DAOnt#treatsComparably
+:treatsComparably rdf:type owl:ObjectProperty ;
+                  rdfs:domain :DataHolder ;
+                  rdfs:range :DataRecipient ;
+                  rdfs:comment "Article 8(3) - Non-discrimination between comparable recipients" ;
+                  rdfs:label "treats comparably" .
+
+
+###  https://w3id.org/def/DAOnt#triggeredBy
+:triggeredBy rdf:type owl:ObjectProperty ;
+             rdfs:domain <https://www.w3.org/ns/odrl/2/Duty> ;
+             rdfs:range :RuleCondition ;
+             rdfs:comment "Condition that activates this obligation" ;
+             rdfs:label "triggered by" .
+
+
+###  https://w3id.org/def/DAOnt#uses
+:uses rdf:type owl:ObjectProperty ;
+      rdfs:subPropertyOf owl:topObjectProperty ;
+      rdfs:domain :User ;
+      rdfs:range :RelatedService ;
+      rdfs:comment "Article 2(12) - Contractual use" ;
+      rdfs:label "uses" .
+
+
+###  https://w3id.org/def/DAOnt#validDuring
+:validDuring rdf:type owl:ObjectProperty ;
+             rdfs:domain <https://www.w3.org/ns/odrl/2/Agreement> ;
+             rdfs:range :TemporalEntity ;
+             rdfs:label "valid during" .
+
+
+###  https://www.w3.org/ns/odrl/2/action
+<https://www.w3.org/ns/odrl/2/action> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain <https://www.w3.org/ns/odrl/2/Rule> ;
+                                      rdfs:range <https://www.w3.org/ns/odrl/2/Action> ;
+                                      rdfs:comment "The operation relating to the Asset for which the Rule is being subjected." ;
+                                      rdfs:label "has action" .
+
+
+###  https://www.w3.org/ns/odrl/2/assignee
+<https://www.w3.org/ns/odrl/2/assignee> rdf:type owl:ObjectProperty ;
+                                        rdfs:domain <https://www.w3.org/ns/odrl/2/Rule> ;
+                                        rdfs:range <https://www.w3.org/ns/odrl/2/Party> ;
+                                        rdfs:comment "The Party is the recipient of the Rule." ;
+                                        rdfs:label "assignee" .
+
+
+###  https://www.w3.org/ns/odrl/2/constraint
+<https://www.w3.org/ns/odrl/2/constraint> rdf:type owl:ObjectProperty ;
+                                          rdfs:domain <https://www.w3.org/ns/odrl/2/Rule> ;
+                                          rdfs:range <https://www.w3.org/ns/odrl/2/Constraint> ;
+                                          rdfs:comment "Constraint applied to a Rule" ;
+                                          rdfs:label "has constraint" .
+
+
+###  https://www.w3.org/ns/odrl/2/target
+<https://www.w3.org/ns/odrl/2/target> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain <https://www.w3.org/ns/odrl/2/Rule> ;
+                                      rdfs:range <https://www.w3.org/ns/odrl/2/Asset> ;
+                                      rdfs:comment "The target property indicates the Asset that is the primary subject to which the Rule action directly applies." ;
+                                      rdfs:label "target" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/def/DAOnt#actionType
+:actionType rdf:type owl:DatatypeProperty ;
+            rdfs:domain :LegalAction ;
+            rdfs:range xsd:string ;
+            rdfs:label "action type" .
+
+
+###  https://w3id.org/def/DAOnt#agreementDate
+:agreementDate rdf:type owl:DatatypeProperty ;
+               rdfs:domain <https://www.w3.org/ns/odrl/2/Agreement> ;
+               rdfs:range xsd:dateTime ;
+               rdfs:label "agreement date" .
+
+
+###  https://w3id.org/def/DAOnt#applicableArticle
+:applicableArticle rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :DataAccessRight ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "applicable article" .
+
+
+###  https://w3id.org/def/DAOnt#articleReference
+:articleReference rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :LegalSource ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "Article number (e.g., 'Article 4(1)')" ;
+                  rdfs:label "article reference" .
+
+
+###  https://w3id.org/def/DAOnt#compensationAmount
+:compensationAmount rdf:type owl:DatatypeProperty ;
+                    rdfs:domain <https://www.w3.org/ns/odrl/2/Agreement> ;
+                    rdfs:range xsd:decimal ;
+                    rdfs:comment "Article 8(1) - Compensation under FRAND terms" ;
+                    rdfs:label "compensation amount" .
+
+
+###  https://w3id.org/def/DAOnt#containsTradeSecret
+:containsTradeSecret rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Data ;
+                     rdfs:range xsd:boolean ;
+                     rdfs:label "contains trade secret" .
+
+
+###  https://w3id.org/def/DAOnt#dataFormat
+:dataFormat rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Data ;
+            rdfs:range xsd:string ;
+            rdfs:label "data format" .
+
+
+###  https://w3id.org/def/DAOnt#deonticModality
+:deonticModality rdf:type owl:DatatypeProperty ;
+                 rdfs:domain <https://www.w3.org/ns/odrl/2/Rule> ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "Obligation, Permission, or Prohibition" ;
+                 rdfs:label "deontic modality" .
+
+
+###  https://w3id.org/def/DAOnt#duration
+:duration rdf:type owl:DatatypeProperty ;
+          rdfs:domain :TemporalEntity ;
+          rdfs:range xsd:duration ;
+          rdfs:label "duration" .
+
+
+###  https://w3id.org/def/DAOnt#endTime
+:endTime rdf:type owl:DatatypeProperty ;
+         rdfs:domain :TemporalEntity ;
+         rdfs:range xsd:dateTime ;
+         rdfs:label "end time" .
+
+
+###  https://w3id.org/def/DAOnt#hasDeadline
+:hasDeadline rdf:type owl:DatatypeProperty ;
+             rdfs:domain :DataRequest ;
+             rdfs:range xsd:date ;
+             rdfs:comment "Response deadline for data request" ;
+             rdfs:label "has deadline" .
+
+
+###  https://w3id.org/def/DAOnt#hasDescription
+:hasDescription rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Data ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Human-readable description" ;
+                rdfs:label "has description" .
+
+
+###  https://w3id.org/def/DAOnt#hasJurisdiction
+:hasJurisdiction rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :LegalSource ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "has jurisdiction" .
+
+
+###  https://w3id.org/def/DAOnt#isConstitutive
+:isConstitutive rdf:type owl:DatatypeProperty ;
+                rdfs:domain :LegalRule ;
+                rdfs:range xsd:boolean ;
+                rdfs:comment "True if rule defines concepts, false if regulative" ;
+                rdfs:label "is constitutive" .
+
+
+###  https://w3id.org/def/DAOnt#isFair
+:isFair rdf:type owl:DatatypeProperty ;
+        rdfs:domain :ContractualTerm ;
+        rdfs:range xsd:boolean ;
+        rdfs:comment "Article 8(1) - FRAND requirement: Fair" ;
+        rdfs:label "is fair" .
+
+
+###  https://w3id.org/def/DAOnt#isMachineReadable
+:isMachineReadable rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Data ;
+                   rdfs:range xsd:boolean ;
+                   rdfs:comment "Article 3(1) - Default true" ;
+                   rdfs:label "is machine readable" .
+
+
+###  https://w3id.org/def/DAOnt#isNonDiscriminatory
+:isNonDiscriminatory rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :ContractualTerm ;
+                     rdfs:range xsd:boolean ;
+                     rdfs:comment "Article 8(1) - FRAND requirement: Non-discriminatory" ;
+                     rdfs:label "is non-discriminatory" .
+
+
+###  https://w3id.org/def/DAOnt#isPersonal
+:isPersonal rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Data ;
+            rdfs:range xsd:boolean ;
+            rdfs:label "is personal data" .
+
+
+###  https://w3id.org/def/DAOnt#isReasonable
+:isReasonable rdf:type owl:DatatypeProperty ;
+              rdfs:domain :ContractualTerm ;
+              rdfs:range xsd:boolean ;
+              rdfs:comment "Article 8(1) - FRAND requirement: Reasonable" ;
+              rdfs:label "is reasonable" .
+
+
+###  https://w3id.org/def/DAOnt#manufacturerIdentifier
+:manufacturerIdentifier rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :ConnectedProduct ;
+                        rdfs:range xsd:string ;
+                        rdfs:label "manufacturer identifier" .
+
+
+###  https://w3id.org/def/DAOnt#productCategory
+:productCategory rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :ConnectedProduct ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "product category" .
+
+
+###  https://w3id.org/def/DAOnt#ruleIdentifier
+:ruleIdentifier rdf:type owl:DatatypeProperty ;
+                rdfs:domain :LegalRule ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Unique identifier for the rule" ;
+                rdfs:label "rule identifier" .
+
+
+###  https://w3id.org/def/DAOnt#ruleText
+:ruleText rdf:type owl:DatatypeProperty ;
+          rdfs:domain :LegalRule ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Full text of the legal rule" ;
+          rdfs:label "rule text" .
+
+
+###  https://w3id.org/def/DAOnt#startTime
+:startTime rdf:type owl:DatatypeProperty ;
+           rdfs:domain :TemporalEntity ;
+           rdfs:range xsd:dateTime ;
+           rdfs:label "start time" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.estrellaproject.org/lkif-core/expression.owl#Legal_Document
+<http://www.estrellaproject.org/lkif-core/expression.owl#Legal_Document> rdf:type owl:Class ;
+                                                                         rdfs:comment "A legal document is a document bearing norms or normative statements. By virtue of this definition the norm-as-propositional-attitude is reified as norm-as proposition. In other words, the norm being expressed through the legal source is an expression of the propositional attitude." ;
+                                                                         rdfs:label "Legal Document" .
+
+
+###  http://www.estrellaproject.org/lkif-core/norm.owl#Right
+<http://www.estrellaproject.org/lkif-core/norm.owl#Right> rdf:type owl:Class ;
+                                                          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty :hasRightHolder ;
+                                                                            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                            owl:onClass <https://www.w3.org/ns/odrl/2/Party>
+                                                                          ] ;
+                                                          rdfs:comment "LKIF: Legal entitlement (Hohfeldian)" ;
+                                                          rdfs:label "Right" .
+
+
+###  http://www.w3.org/2004/02/skos/core#Collection
+<http://www.w3.org/2004/02/skos/core#Collection> rdf:type owl:Class .
+
+
+###  https://w3c.github.io/dpv/2.2/dpv/#Consent
+<https://w3c.github.io/dpv/2.2/dpv/#Consent> rdf:type owl:Class ;
+                                             rdfs:comment "Consent of the Data Subject for specified process or activity" ;
+                                             rdfs:label "Consent" .
+
+
+###  https://w3c.github.io/dpv/2.2/dpv/#DataSubject
+<https://w3c.github.io/dpv/2.2/dpv/#DataSubject> rdf:type owl:Class ;
+                                                 rdfs:comment "The individual (or category of individuals) whose personal data is being processed" ;
+                                                 rdfs:label "Data Subject" .
+
+
+###  https://w3c.github.io/dpv/2.2/dpv/#NonPersonalData
+<https://w3c.github.io/dpv/2.2/dpv/#NonPersonalData> rdf:type owl:Class ;
+                                                     rdfs:subClassOf :Data ;
+                                                     owl:disjointWith <https://w3c.github.io/dpv/2.2/dpv/#PersonalData> ;
+                                                     rdfs:comment "Data that is not Personal Data" ;
+                                                     rdfs:label "Non-Personal Data" .
+
+
+###  https://w3c.github.io/dpv/2.2/dpv/#PersonalData
+<https://w3c.github.io/dpv/2.2/dpv/#PersonalData> rdf:type owl:Class ;
+                                                  rdfs:subClassOf :Data ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <https://w3c.github.io/dpv/2.2/dpv/#hasDataSubject> ;
+                                                                    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                    owl:onClass :NaturalPerson
+                                                                  ] ;
+                                                  rdfs:comment "Data directly or indirectly associated or related to an individual" ;
+                                                  rdfs:label "Personal Data" .
+
+
+###  https://w3id.org/def/DAOnt#ActionCondition
+:ActionCondition rdf:type owl:Class ;
+                 rdfs:subClassOf :RuleCondition ;
+                 rdfs:label "Action Condition" .
+
+
+###  https://w3id.org/def/DAOnt#AftermarketServiceProvider
+:AftermarketServiceProvider rdf:type owl:Class ;
+                            rdfs:subClassOf :ThirdParty ;
+                            rdfs:comment "Service provider competing with or complementing data holder" ;
+                            rdfs:label "Aftermarket Service Provider" ;
+                            <http://www.w3.org/2004/02/skos/core#definition> "Service provider that competes with or complements the data holder's services. Can be designated by user as third party (Article 5) or request data under B2B provisions (Article 8). Key beneficiary of Data Act's market opening objectives."@en ;
+                            <http://www.w3.org/2004/02/skos/core#example> "energyOptimizationService (third party receiving thermostat data), autoRepair (B2B recipient requesting RobotData), mantenimientoTech, techFix (aftermarket repair services)."@en ;
+                            <http://www.w3.org/2004/02/skos/core#prefLabel> "Aftermarket Service Provider"@en ,
+                                                                            "Proveedor de Servicios Posventa"@es ;
+                            <http://www.w3.org/2004/02/skos/core#scopeNote> "MARKET COMPETITION FOCUS: Data Act aims to enable aftermarket competition. Can access data via (1) user designation as ThirdParty, or (2) B2B request as DataRecipient with user authorization. Non-discrimination required per Article 8(3). Examples include repair services, analytics providers."@en .
+
+
+###  https://w3id.org/def/DAOnt#B2BDataSharing
+:B2BDataSharing rdf:type owl:Class ;
+                rdfs:subClassOf :DataSharing ;
+                rdfs:comment "Chapter III (Article 8) - Business-to-business data sharing, must be authorized by user per Article 8(4)" ;
+                rdfs:label "B2B Data Sharing" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Data sharing between businesses where a data recipient requests access from a data holder. MANDATORY REQUIREMENTS: (1) User authorization (Article 8(4)), (2) FRAND terms (Article 8(1)), (3) Non-discrimination (Article 8(3)). Data holder may refuse ONLY if data contains trade secrets (Article 8(6))."@en ;
+                <http://www.w3.org/2004/02/skos/core#example> "Aftermarket repair service (autoRepair) requests robot diagnostic data from RobotManufacturer with user authorization. Violation example: RobotManufacturer refuses without trade secret justification (Article 8(6) violation)."@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Business-to-Business Data Sharing"@en ,
+                                                                "Compartición de Datos B2B"@es ;
+                <http://www.w3.org/2004/02/skos/core#scopeNote> "Governed by Chapter III, Article 8. COMPLIANCE REQUIREMENT: Data holder can refuse ONLY with trade secret justification (Article 8(6)). Unjustified refusal is a violation detectable via SPARQL query checking for missing DataProvision without TradeSecretData. Related to DataRecipient, DataHolder, FRAND, authorizedBy property."@en .
+
+
+###  https://w3id.org/def/DAOnt#B2CDataSharing
+:B2CDataSharing rdf:type owl:Class ;
+                rdfs:subClassOf :DataSharing ;
+                rdfs:comment "Chapter II (Articles 3-7) - Business-to-Consumer data sharing, data holder makes data available to user" ;
+                rdfs:label "B2C Data Sharing" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Data sharing from data holder to user (consumer or enterprise) who owns, rents, or leases the connected product that generated the data. Data holders must make data available without undue delay, free of charge, and in machine-readable format (Article 4)."@en ;
+                <http://www.w3.org/2004/02/skos/core#example> "Consumer (Charlie) requests health data from smart watch manufacturer - manufacturer must provide the data. Factory owner requests sensor data from IoT device manufacturer. Violation example: watchManufacturer fails to provide charlieHealthData despite user request."@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Business-to-Consumer Data Sharing"@en ,
+                                                                "Compartición de Datos B2C"@es ;
+                <http://www.w3.org/2004/02/skos/core#scopeNote> "Governed by Chapter II, Article 4. COMPLIANCE REQUIREMENT: Data holder MUST provide data when user requests it. Failure to provide data violates Article 4(1) and is detectable via SPARQL query checking for missing DataProvision actions. Related to ConsumerUser, DataHolder, ConnectedProduct."@en .
+
+
+###  https://w3id.org/def/DAOnt#B2GDataSharing
+:B2GDataSharing rdf:type owl:Class ;
+                rdfs:subClassOf :DataSharing ;
+                rdfs:comment "Chapter V (Articles 14-22) - Business to Government data sharing for exceptional need" ;
+                rdfs:label "B2G Data Sharing" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Data sharing from data holder to public sector body based on exceptional need (Article 15) such as public emergency, official statistics, or regulatory function. CRITICAL RESTRICTION: Article 19(2)(a) PROHIBITS using received data to develop products or services competing with private sector."@en ;
+                <http://www.w3.org/2004/02/skos/core#example> "HealthAuthority requests health data for public emergency response - ALLOWED. HealthAuthority uses same data to develop competing health app - PROHIBITED (Article 19(2)(a) violation). Statistical office requests industrial data for GDP calculation - ALLOWED."@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Business-to-Government Data Sharing"@en ,
+                                                                "Compartición de Datos B2G"@es ;
+                <http://www.w3.org/2004/02/skos/core#scopeNote> "Governed by Chapter V, Articles 14-22. COMPLIANCE REQUIREMENT: Public body MUST NOT use data for competitive product development (Article 19(2)(a)). Violation is detectable via SPARQL query checking if PublicSectorBody performs UseDataToDevelopCompetingProduct action. Related to PublicSectorBody, ExceptionalNeed, Article19_2_a_prohibition."@en .
+
+
+###  https://w3id.org/def/DAOnt#BusinessDataRecipient
+:BusinessDataRecipient rdf:type owl:Class ;
+                       rdfs:subClassOf :DataRecipient ;
+                       rdfs:comment "Article 8 - Data recipient in B2B context" ;
+                       rdfs:label "Business Data Recipient" .
+
+
+###  https://w3id.org/def/DAOnt#ConnectedProduct
+:ConnectedProduct rdf:type owl:Class ;
+                  rdfs:subClassOf <https://www.w3.org/ns/odrl/2/Asset> ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :generatesData ;
+                                    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass :Data
+                                  ] ;
+                  rdfs:comment "Article 2(5) - Product generating data" ;
+                  rdfs:label "Connected Product" ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "Physical product that obtains, generates, or collects data concerning its use or environment and communicates this data via electronic means. The data generated by the product is subject to user access rights under Article 4 when user owns, rents, or leases the product."@en ;
+                  <http://www.w3.org/2004/02/skos/core#example> "smartThermostat1 generates aliceTemperatureData - Alice has access right. smartWatch1 generates charlieHealthData - Charlie requests but watchManufacturer fails to provide (Article 4(1) violation). industrialRobot1 generates RobotData - factoryOwner has access right."@en ;
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Connected Product"@en ,
+                                                                  "Producto Conectado"@es ;
+                  <http://www.w3.org/2004/02/skos/core#scopeNote> "Defined in Article 2(5). COMPLIANCE TRIGGER: When ConnectedProduct generates data (via generatesData property), the user who owns/uses it (via ownsOrUses) gains Article 4 access rights. Data holder MUST provide this data when requested. Related to ProductData, isGeneratedBy, ownsOrUses properties."@en .
+
+
+###  https://w3id.org/def/DAOnt#ConstitutiveRule
+:ConstitutiveRule rdf:type owl:Class ;
+                  rdfs:subClassOf :LegalRule ;
+                  rdfs:comment "Rule that defines concepts or counts as relationships" ;
+                  rdfs:label "Constitutive Rule" .
+
+
+###  https://w3id.org/def/DAOnt#ConsumerUser
+:ConsumerUser rdf:type owl:Class ;
+              rdfs:subClassOf :User ;
+              rdfs:comment "Natural person acting for non-professional purposes - protected by Article 13" ;
+              rdfs:label "Consumer User" ;
+              <http://www.w3.org/2004/02/skos/core#definition> "Natural person who owns, rents, or leases a connected product for non-professional, personal purposes. Has UNCONDITIONAL right to access generated data (Article 4) free of charge. Enhanced protection against unfair contractual terms under Article 13."@en ;
+              <http://www.w3.org/2004/02/skos/core#example> "Alice (consumer) requests temperature data from smart thermostat - right guaranteed. Charlie (consumer) requests health data from smart watch - watchManufacturer MUST provide (failure = violation detected in compliance query). Distinct from EnterpriseUser."@en ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "Consumer User"@en ,
+                                                              "Usuario Consumidor"@es ;
+              <http://www.w3.org/2004/02/skos/core#scopeNote> "COMPLIANCE SIGNIFICANCE: Consumer users trigger Article 4(1) obligations on data holders. When ConsumerUser requests data via requestsAccessTo property, data holder MUST perform DataProvision. Failure is Article 4(1) violation. Related to ownsOrUses, requestsAccessTo, hasAccessRight properties."@en .
+
+
+###  https://w3id.org/def/DAOnt#ContractFormation
+:ContractFormation rdf:type owl:Class ;
+                   rdfs:subClassOf :LegalAction ;
+                   rdfs:label "Contract Formation" .
+
+
+###  https://w3id.org/def/DAOnt#ContractualRelationship
+:ContractualRelationship rdf:type owl:Class ;
+                         rdfs:subClassOf :LegalRelationship ;
+                         rdfs:label "Contractual Relationship" .
+
+
+###  https://w3id.org/def/DAOnt#ContractualTerm
+:ContractualTerm rdf:type owl:Class ;
+                 rdfs:comment "Provision in agreement" ;
+                 rdfs:label "Contractual Term" ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Individual provision or clause within a data sharing agreement. Subject to FRAND evaluation in B2B context. Can be FRANDTerms (compliant) or UnfairTerm (non-compliant and unenforceable per Article 13)."@en ;
+                 <http://www.w3.org/2004/02/skos/core#example> "Compensation clauses, data format specifications, access frequency limits, confidentiality provisions."@en ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Contractual Term"@en ;
+                 <http://www.w3.org/2004/02/skos/core#scopeNote> "Agreement hasTerm ContractualTerm. Properties: isFair, isReasonable, isNonDiscriminatory (boolean checks for FRAND compliance). Subclasses: FRANDTerms, UnfairTerm. Critical for Article 8-13 compliance."@en .
+
+
+###  https://w3id.org/def/DAOnt#Data
+:Data rdf:type owl:Class ;
+      rdfs:subClassOf <https://www.w3.org/ns/odrl/2/Asset> ;
+      rdfs:comment "Article 2(1) - Any digital representation" ;
+      rdfs:label "Data" ;
+      <http://www.w3.org/2004/02/skos/core#definition> "Any digital representation of acts, facts, or information, and any compilation of such acts, facts, or information. Fundamental asset in the Data Act ecosystem subject to access rights, sharing obligations, and FRAND terms depending on context (B2C, B2B, B2G)."@en ;
+      <http://www.w3.org/2004/02/skos/core#example> "aliceTemperatureData (personal product data), machineData1 (non-personal product data), charlieHealthData (personal data subject to access rights). legacyData with isMachineReadable=false violates Article 3(1)."@en ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "Data"@en ,
+                                                      "Datos"@es ;
+      <http://www.w3.org/2004/02/skos/core#scopeNote> "Defined in Article 2(1). ROOT CONCEPT for compliance: All obligations and rights in the Data Act pertain to Data. Must be machine-readable per Article 3(1) (isMachineReadable property). Specializes into ProductData, RelatedServiceData, PersonalData, NonPersonalData. Related to isGeneratedBy, dpv:hasData properties."@en .
+
+
+###  https://w3id.org/def/DAOnt#DataAccessRight
+:DataAccessRight rdf:type owl:Class ;
+                 rdfs:subClassOf <http://www.estrellaproject.org/lkif-core/norm.owl#Right> ;
+                 rdfs:comment "Legal entitlement to access data" ;
+                 rdfs:label "Data Access Right" ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Legal entitlement granted to users to access data generated by connected products they own, rent, or lease. Foundation of the Data Act's user empowerment provisions (Chapter II, Articles 3-7). Creates enforceable obligation on data holders."@en ;
+                 <http://www.w3.org/2004/02/skos/core#example> "aliceAccessRight (Alice's right to access temperature data from her thermostat under Article 4). When exercised, triggers obligation on thermostatManufacturer to provide data."@en ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Access Right"@en ,
+                                                                 "Derecho de Acceso a Datos"@es ;
+                 <http://www.w3.org/2004/02/skos/core#scopeNote> "Core right in Data Act. Users have DataAccessRight via hasAccessRight property. When user exercises this right via requestsAccessTo, data holder MUST respond with DataProvision action. Failure = Article 4(1) violation detected in compliance queries. Specializes to UserAccessRight."@en .
+
+
+###  https://w3id.org/def/DAOnt#DataCategory
+:DataCategory rdf:type owl:Class ;
+              rdfs:comment "Data type classification" ;
+              rdfs:label "Data Category" .
+
+
+###  https://w3id.org/def/DAOnt#DataContentCondition
+:DataContentCondition rdf:type owl:Class ;
+                      rdfs:subClassOf :RuleCondition ;
+                      rdfs:label "Data Content Condition" .
+
+
+###  https://w3id.org/def/DAOnt#DataHolder
+:DataHolder rdf:type owl:Class ;
+            rdfs:subClassOf <https://www.w3.org/ns/odrl/2/Party> ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty <https://w3c.github.io/dpv/2.2/dpv/#hasData> ;
+                              owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass :Data
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasObligation ;
+                              owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onClass <https://www.w3.org/ns/odrl/2/Duty>
+                            ] ;
+            rdfs:comment "Article 2(13) - Has the right or obligation to control access to data" ;
+            rdfs:label "Data Holder" ;
+            <http://www.w3.org/2004/02/skos/core#definition> "A legal or natural person with the right or obligation to control access to data. MANDATORY OBLIGATIONS: (1) Provide data to users upon request (Article 4) via performsLegalAction→DataProvision, (2) Share with data recipients under FRAND terms (Article 8), (3) Justify refusals with trade secrets (Article 8(6))."@en ;
+            <http://www.w3.org/2004/02/skos/core#example> "watchManufacturer (data holder) MUST provide charlieHealthData when Charlie requests it. RobotManufacturer MUST share RobotData with autoRepair unless trade secret exists. thermostatManufacturer successfully provides aliceTemperatureData (compliant example)."@en ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Holder"@en ,
+                                                            "Titular de Datos"@es ;
+            <http://www.w3.org/2004/02/skos/core#scopeNote> "Defined in Article 2(13). COMPLIANCE ENFORCEMENT: Violations detected when (a) User requests data but holder has no DataProvision action (Article 4 violation), (b) DataRecipient authorized request but holder refuses without trade secret (Article 8(6) violation). Related to dpv:hasData, performsLegalAction, DataProvision."@en .
+
+
+###  https://w3id.org/def/DAOnt#DataIntermediationService
+:DataIntermediationService rdf:type owl:Class ;
+                           rdfs:subClassOf <https://www.w3.org/ns/odrl/2/Party> ,
+                                           [ rdf:type owl:Restriction ;
+                                             owl:onProperty :actsOnBehalfOf ;
+                                             owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                             owl:onClass :User
+                                           ] ;
+                           rdfs:comment "Recitals 29-33 - Acts on behalf of user" ;
+                           rdfs:label "Data Intermediation Service" ;
+                           <http://www.w3.org/2004/02/skos/core#definition> "Service that facilitates data sharing by acting on behalf of users. Can exercise user rights under appropriate authorization. Regulated under Data Governance Act and referenced in Data Act Recitals 29-33."@en ;
+                           <http://www.w3.org/2004/02/skos/core#example> "Personal data space providers, data trusts, data cooperatives acting for user collectives."@en ;
+                           <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Intermediation Service"@en ;
+                           <http://www.w3.org/2004/02/skos/core#scopeNote> "Recitals 29-33. actsOnBehalfOf User. Can exercise DataAccessRight and designate ThirdParty on user's behalf. Subject to Data Governance Act trustworthiness requirements. Enables scalable user empowerment."@en .
+
+
+###  https://w3id.org/def/DAOnt#DataLicenseAgreement
+:DataLicenseAgreement rdf:type owl:Class ;
+                      rdfs:subClassOf <https://www.w3.org/ns/odrl/2/Agreement> ;
+                      rdfs:comment "Article 4(13) - License for data use" ;
+                      rdfs:label "Data License Agreement" .
+
+
+###  https://w3id.org/def/DAOnt#DataProcessingService
+:DataProcessingService rdf:type owl:Class ;
+                       rdfs:subClassOf :ServiceProvider ;
+                       rdfs:comment "Article 2(8), Articles 30-32 - Cloud/edge provider" ;
+                       rdfs:label "Data Processing Service" ;
+                       <http://www.w3.org/2004/02/skos/core#definition> "Cloud or edge computing service that processes data. Subject to Chapter VI (Articles 23-32) switching and portability obligations. Must comply with interoperability standards and enable customer switching without vendor lock-in."@en ;
+                       <http://www.w3.org/2004/02/skos/core#example> "AWS, Azure, Google Cloud processing customer data. Must enable switching per Articles 23-29."@en ;
+                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Processing Service"@en ;
+                       <http://www.w3.org/2004/02/skos/core#scopeNote> "Articles 2(8), 23-32. compliesWith InteroperabilityStandard. implementedBy SmartContract. Data involvesProcessingService DataProcessingService. Critical for cloud portability and multi-cloud strategies. Prevents vendor lock-in."@en .
+
+
+###  https://w3id.org/def/DAOnt#DataProvision
+:DataProvision rdf:type owl:Class ;
+               rdfs:subClassOf :LegalAction ;
+               rdfs:label "Data Provision" ;
+               <http://www.w3.org/2004/02/skos/core#definition> "Legal action of making data available to a requesting party (user or data recipient). Acts as COMPLIANCE PROOF that data holder fulfilled their obligation under Article 4 (B2C) or Article 8 (B2B). Linked via performsLegalAction property."@en ;
+               <http://www.w3.org/2004/02/skos/core#example> "DataProvisionOfThermostatDataToAlice (compliant - thermostatManufacturer performed action). Missing DataProvision for charlieHealthData = Article 4(1) violation. Missing DataProvision for RobotData to autoRepair = Article 8(6) violation if no trade secret."@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Provision"@en ,
+                                                               "Provisión de Datos"@es ;
+               <http://www.w3.org/2004/02/skos/core#scopeNote> "CRITICAL FOR COMPLIANCE VERIFICATION: Absence of DataProvision action when data is requested indicates violation. SPARQL queries use \"FILTER NOT EXISTS { ?holder DAOnt:performsLegalAction ?provision . ?provision a DAOnt:DataProvision }\" to detect violations. Must be performed by DataHolder."@en .
+
+
+###  https://w3id.org/def/DAOnt#DataRecipient
+:DataRecipient rdf:type owl:Class ;
+               rdfs:subClassOf <https://www.w3.org/ns/odrl/2/Party> ;
+               owl:disjointWith :User ;
+               rdfs:comment "Article 2(14) - Receives data, OTHER THAN the user" ;
+               rdfs:label "Data Recipient" ;
+               <http://www.w3.org/2004/02/skos/core#definition> "A legal or natural person receiving data from a data holder, explicitly EXCLUDING the user. In B2B context (Article 8), can request data with user authorization under FRAND terms. Data holder may refuse ONLY if trade secret exists (Article 8(6))."@en ;
+               <http://www.w3.org/2004/02/skos/core#example> "autoRepair (data recipient) requests RobotData with authorization - RobotManufacturer must provide unless trade secret (violation if refused without justification). energyOptimizationService receives thermostatData (compliant). HealthAuthority receives data in B2G context (different rules)."@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Recipient"@en ,
+                                                               "Destinatario de Datos"@es ;
+               <http://www.w3.org/2004/02/skos/core#scopeNote> "Defined in Article 2(14). COMPLIANCE ROLE: In B2B sharing, DataRecipient triggers Article 8 obligations. When recipient authorized by user requests data, holder MUST provide UNLESS trade secret justification exists. Unjustified refusal (missing DataProvision + no TradeSecretData) = Article 8(6) violation. Related to requestsAccessFrom, BusinessDataRecipient, AftermarketServiceProvider."@en .
+
+
+###  https://w3id.org/def/DAOnt#DataRequest
+:DataRequest rdf:type owl:Class ;
+             rdfs:subClassOf :LegalAction ;
+             rdfs:comment "Article 4, 5, 14 - Formal request" ;
+             rdfs:label "Data Request" ;
+             <http://www.w3.org/2004/02/skos/core#definition> "Formal action of requesting access to data. Can be initiated by users (Article 4), data recipients (Article 8), or public sector bodies (Article 14). Creates obligations on data holder depending on context and legal basis. Subject to deadlines (hasDeadline property)."@en ;
+             <http://www.w3.org/2004/02/skos/core#example> "Charlie's request for charlieHealthData (Article 4 - user request), autoRepair requesting RobotData (Article 8 - B2B request), HealthAuthority request for emergency data (Article 14 - B2G request with ExceptionalNeed justification)."@en ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Request"@en ,
+                                                             "Solicitud de Datos"@es ;
+             <http://www.w3.org/2004/02/skos/core#scopeNote> "COMPLIANCE TRIGGER ACTION: DataRequest activates obligations. (1) User request via requestsAccessTo → Article 4 obligation, (2) B2B request via requestsAccessFrom → Article 8 obligation if authorized, (3) B2G request via respondsTo ExceptionalNeed → Article 14 obligation. hasDeadline specifies response timeframe."@en .
+
+
+###  https://w3id.org/def/DAOnt#DataSharing
+:DataSharing rdf:type owl:Class ;
+             rdfs:subClassOf :LegalAction ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :authorizedBy ;
+                               owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                               owl:onClass :User
+                             ] ;
+             owl:disjointUnionOf ( :B2BDataSharing
+                                   :B2CDataSharing
+                                   :B2GDataSharing
+                                 ) ;
+             rdfs:comment "Instance of data being shared between parties" ;
+             rdfs:label "Data Sharing" .
+
+
+###  https://w3id.org/def/DAOnt#DataSharingAgreement
+:DataSharingAgreement rdf:type owl:Class ;
+                      rdfs:subClassOf <https://www.w3.org/ns/odrl/2/Agreement> ;
+                      rdfs:comment "Contract governing data sharing" ;
+                      rdfs:label "Data Sharing Agreement" ;
+                      <http://www.w3.org/2004/02/skos/core#definition> "Contract between parties governing data sharing arrangements. In B2B context, MUST comply with FRAND conditions (Article 8-12). In B2C context, governed by Chapter II. Subject to unfair terms provisions (Article 13) protecting weaker parties."@en ;
+                      <http://www.w3.org/2004/02/skos/core#example> "contract189 (FRAND-compliant: all properties true), contract247 (FRAND-violated: isFair=false), contract999 (missing authorization), b2bAgreement1, Contract191 (B2G context), contract_charlie (B2C context)."@en ;
+                      <http://www.w3.org/2004/02/skos/core#prefLabel> "Acuerdo de Compartición de Datos"@es ,
+                                                                      "Data Sharing Agreement"@en ;
+                      <http://www.w3.org/2004/02/skos/core#scopeNote> "COMPLIANCE ANCHOR: DataSharing instances are governedBy DataSharingAgreement. In B2B: agreement is subjectToFRAND (links to FRANDCondition). Violations: unfair terms (Article 13), missing FRAND compliance. Related to compensationAmount, hasTerm, validDuring properties. Used in all three compliance queries."@en .
+
+
+###  https://w3id.org/def/DAOnt#DataSharingAuthorization
+:DataSharingAuthorization rdf:type owl:Class ;
+                          rdfs:subClassOf :LegalAction ;
+                          rdfs:label "Data Sharing Authorization" .
+
+
+###  https://w3id.org/def/DAOnt#DataSharingRelationship
+:DataSharingRelationship rdf:type owl:Class ;
+                         rdfs:subClassOf :LegalRelationship ;
+                         rdfs:label "Data Sharing Relationship" .
+
+
+###  https://w3id.org/def/DAOnt#DataSpace
+:DataSpace rdf:type owl:Class ;
+           rdfs:comment "Article 33 - Data sharing space" ;
+           rdfs:label "Data Space" ;
+           <http://www.w3.org/2004/02/skos/core#definition> "Federated infrastructure enabling data sharing among multiple parties with common governance. Supported by Article 33 Data Act provisions. Parties participate via participatesIn property. Enables sectoral or cross-sectoral data ecosystems."@en ;
+           <http://www.w3.org/2004/02/skos/core#example> "European Health Data Space, Manufacturing-X, Gaia-X data infrastructure, agricultural data space."@en ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Space"@en ;
+           <http://www.w3.org/2004/02/skos/core#scopeNote> "Article 33. Party participatesIn DataSpace. Aligns with European Data Strategy. Provides common framework for FRAND-based data sharing at scale. Examples: health data spaces, industrial data spaces, mobility data spaces."@en .
+
+
+###  https://w3id.org/def/DAOnt#Enterprise
+:Enterprise rdf:type owl:Class ;
+            rdfs:subClassOf :PartyCategory ;
+            rdfs:label "Enterprise" .
+
+
+###  https://w3id.org/def/DAOnt#EnterpriseUser
+:EnterpriseUser rdf:type owl:Class ;
+                rdfs:subClassOf :User ;
+                rdfs:comment "Legal person or natural person acting professionally as a user" ;
+                rdfs:label "Enterprise User" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Legal person or natural person acting in a professional/commercial capacity who owns, rents, or leases connected products. Has same Article 4 access rights as consumers but fewer Article 13 protections against unfair terms. Typically B2B context."@en ;
+                <http://www.w3.org/2004/02/skos/core#example> "factoryOwnerAcme (owns industrialRobot1), factoryOwnerBeta (owns industrialRobot2), factoryOwnerGamma, bob (SME user). Contrast with alice, charlie (ConsumerUser)."@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Enterprise User"@en ,
+                                                                "Usuario Empresarial"@es ;
+                <http://www.w3.org/2004/02/skos/core#scopeNote> "Professional user category. SAME ACCESS RIGHTS as ConsumerUser (Article 4) but DIFFERENT PROTECTIONS: Article 13 unfair terms provisions primarily protect consumers. Can authorize B2B data sharing (Article 8(4)). Related to SME, LargeEnterprise classifications via hasPartyType."@en .
+
+
+###  https://w3id.org/def/DAOnt#ExceptionalNeed
+:ExceptionalNeed rdf:type owl:Class ;
+                 rdfs:label "Exceptional Need" ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Justification basis for public sector data requests under Article 15. Includes public emergencies, official statistics, regulatory functions, or other compelling public interest. Required for B2G data sharing under Chapter V (Articles 14-22)."@en ;
+                 <http://www.w3.org/2004/02/skos/core#example> "PublicHealthEmergency (Article 15 - justifies HealthAuthority requesting health data for emergency response). Statistical data collection for GDP calculation. Regulatory oversight of critical infrastructure. Natural disaster response."@en ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Exceptional Need"@en ,
+                                                                 "Necesidad Excepcional"@es ;
+                 <http://www.w3.org/2004/02/skos/core#scopeNote> "Article 15 B2G REQUIREMENT: PublicSectorBody MUST demonstrate ExceptionalNeed to request data. DataRequest respondsTo ExceptionalNeed. PublicSectorBody hasExceptionalNeedFor specific Data. Without valid exceptional need, B2G request is unlawful. Examples enumerated in Article 15."@en .
+
+
+###  https://w3id.org/def/DAOnt#FRANDCondition
+:FRANDCondition rdf:type owl:Class ;
+                rdfs:comment "Article 8-12 - FRAND conditions" ;
+                rdfs:label "FRAND Condition" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Fair, Reasonable, And Non-Discriminatory conditions mandatory for B2B data sharing agreements (Article 8(1)). Ensures data recipients can access data under balanced terms. COMPLIANCE METRICS: isFair, isReasonable, isNonDiscriminatory properties must all be true. Violations render contractual terms unenforceable (Article 13)."@en ;
+                <http://www.w3.org/2004/02/skos/core#example> "frand189 (all properties true) = compliant B2B agreement. frand247 (isFair=false, isNonDiscriminatory=false) = Article 8(1) violation, terms unenforceable. compensationAmount must be reasonable. Non-discrimination: comparable recipients get comparable terms (Article 8(3))."@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Condición FRAND"@es ,
+                                                                "FRAND Condition"@en ;
+                <http://www.w3.org/2004/02/skos/core#scopeNote> "Core B2B compliance concept. Related to DataSharingAgreement via subjectToFRAND property. While not directly checked in unjustified refusal query, FRAND context matters: holder cannot impose unfair terms as reason to refuse (must only refuse for trade secrets per Article 8(6)). Related to isFair, isReasonable, isNonDiscriminatory datatype properties."@en .
+
+
+###  https://w3id.org/def/DAOnt#FRANDTerms
+:FRANDTerms rdf:type owl:Class ;
+            rdfs:subClassOf :ContractualTerm ;
+            rdfs:comment "FRAND contractual terms" ;
+            rdfs:label "FRAND Terms" ;
+            <http://www.w3.org/2004/02/skos/core#definition> "Contractual terms that meet Fair, Reasonable, And Non-Discriminatory criteria. Required in B2B data sharing agreements (Article 8). Enforceable terms that balance interests of data holder and data recipient."@en ;
+            <http://www.w3.org/2004/02/skos/core#example> "Reasonable compensation reflecting costs, non-discriminatory treatment of similar recipients, fair contract duration enabling market entry."@en ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "FRAND Terms"@en ;
+            <http://www.w3.org/2004/02/skos/core#scopeNote> "Compliant ContractualTerm. Must satisfy: isFair=true, isReasonable=true, isNonDiscriminatory=true. Linked to FRANDCondition via DataSharingAgreement. Essential for B2B compliance under Articles 8-12."@en .
+
+
+###  https://w3id.org/def/DAOnt#InteroperabilityStandard
+:InteroperabilityStandard rdf:type owl:Class ;
+                          rdfs:comment "Article 34-35 - Standard" ;
+                          rdfs:label "Interoperability Standard" ;
+                          <http://www.w3.org/2004/02/skos/core#definition> "Technical standard ensuring data portability and service interoperability. Required for data processing services under Articles 34-35. Enables data sharing across platforms and prevents technical lock-in."@en ;
+                          <http://www.w3.org/2004/02/skos/core#example> "Data format standards, API specifications, protocol standards for data exchange."@en ;
+                          <http://www.w3.org/2004/02/skos/core#prefLabel> "Interoperability Standard"@en ;
+                          <http://www.w3.org/2004/02/skos/core#scopeNote> "Articles 34-35. DataProcessingService compliesWith InteroperabilityStandard. Essential for Chapter VI (cloud switching) and Chapter VII (smart contracts) implementation. European Commission may mandate specific standards."@en .
+
+
+###  https://w3id.org/def/DAOnt#LargeEnterprise
+:LargeEnterprise rdf:type owl:Class ;
+                 rdfs:subClassOf :Enterprise ;
+                 owl:disjointWith :SME ;
+                 rdfs:label "Large Enterprise" .
+
+
+###  https://w3id.org/def/DAOnt#LegalAction
+:LegalAction rdf:type owl:Class ;
+             rdfs:subClassOf <https://www.w3.org/ns/odrl/2/Action> ;
+             rdfs:label "Legal Action" ;
+             <http://www.w3.org/2004/02/skos/core#definition> "Action with legal significance in data sharing context. Includes DataProvision, DataRequest, DataSharing, ContractFormation. Party performsLegalAction LegalAction. Creates, modifies, or terminates legal relationships and obligations."@en ;
+             <http://www.w3.org/2004/02/skos/core#example> "DataProvisionOfThermostatDataToAlice (provision action), charlie requesting data (request action), agreement189 (B2B sharing action)."@en ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "Legal Action"@en ;
+             <http://www.w3.org/2004/02/skos/core#scopeNote> "Abstract superclass for legally relevant actions. Subclasses: DataProvision (compliance proof), DataRequest (obligation trigger), DataSharing (B2C/B2B/B2G), DataSharingAuthorization (Article 8(4)). Related properties: performsLegalAction, hasParticipant, occursAt, actionType."@en .
+
+
+###  https://w3id.org/def/DAOnt#LegalEffect
+:LegalEffect rdf:type owl:Class ;
+             rdfs:comment "Legal consequence when rule fires" ;
+             rdfs:label "Legal Effect" .
+
+
+###  https://w3id.org/def/DAOnt#LegalRelationship
+:LegalRelationship rdf:type owl:Class ;
+                   rdfs:label "Legal Relationship" .
+
+
+###  https://w3id.org/def/DAOnt#LegalRule
+:LegalRule rdf:type owl:Class ;
+           rdfs:comment "Formal representation of a legal rule from the Data Act" ;
+           rdfs:label "Legal Rule" ;
+           <http://www.w3.org/2004/02/skos/core#definition> "Formal logical representation of a legal rule from the Data Act, structured as IF (antecedent) THEN (consequent) with possible exceptions. Encodes obligations, permissions, and prohibitions from the regulation for automated compliance checking."@en ;
+           <http://www.w3.org/2004/02/skos/core#example> "article4_1_rule (IF user requests data THEN holder must provide), article8_6_rule (permission to refuse IF trade secret), Article19_2_a_rule (prohibition on competitive product development by public bodies)."@en ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Legal Rule"@en ,
+                                                           "Regla Legal"@es ;
+           <http://www.w3.org/2004/02/skos/core#scopeNote> "FORMALIZATION PATTERN: hasAntecedent (conditions triggering rule) → hasConsequent (legal effect when triggered). May have hasException (conditions preventing rule application). hasDeonticSpecification links to Duty/Permission/Prohibition. derivesFrom links to LegalSource (articles). Properties: ruleIdentifier, ruleText."@en .
+
+
+###  https://w3id.org/def/DAOnt#LegalSource
+:LegalSource rdf:type owl:Class ;
+             rdfs:comment "Source document (regulation, article, recital)" ;
+             rdfs:label "Legal Source" .
+
+
+###  https://w3id.org/def/DAOnt#Manufacturer
+:Manufacturer rdf:type owl:Class ;
+              rdfs:subClassOf :DataHolder ,
+                              :ServiceProvider ;
+              rdfs:comment "Article 3 - Manufacturer of connected products" ;
+              rdfs:label "Manufacturer" ;
+              <http://www.w3.org/2004/02/skos/core#definition> "Legal or natural person who manufactures connected products. Typically the initial data holder for product data. Subject to Chapter II obligations (provide data to users) and Chapter III obligations (share with data recipients under FRAND terms)."@en ;
+              <http://www.w3.org/2004/02/skos/core#example> "thermostatManufacturer (compliant - performs DataProvision), watchManufacturer (non-compliant - fails to provide charlieHealthData), RobotManufacturer (holds RobotData1), sensorManufacturer (manufactures industrialSensor1)."@en ;
+              <http://www.w3.org/2004/02/skos/core#prefLabel> "Fabricante"@es ,
+                                                              "Manufacturer"@en ;
+              <http://www.w3.org/2004/02/skos/core#scopeNote> "Article 3 definition. DUAL ROLE: (1) As DataHolder - must provide data to users (Article 4), (2) As ServiceProvider - may provide related services. Common violator in compliance scenarios. Related to manufacturerIdentifier property on ConnectedProduct. Subclass of both DataHolder and ServiceProvider."@en .
+
+
+###  https://w3id.org/def/DAOnt#Metadata
+:Metadata rdf:type owl:Class ;
+          rdfs:subClassOf :Data ;
+          rdfs:comment "Article 3(1) - Information to interpret data" ;
+          rdfs:label "Metadata" .
+
+
+###  https://w3id.org/def/DAOnt#Microenterprise
+:Microenterprise rdf:type owl:Class ;
+                 rdfs:subClassOf :SME ;
+                 rdfs:label "Microenterprise" .
+
+
+###  https://w3id.org/def/DAOnt#NaturalPerson
+:NaturalPerson rdf:type owl:Class ;
+               rdfs:subClassOf :PartyCategory ;
+               rdfs:label "Natural Person" .
+
+
+###  https://w3id.org/def/DAOnt#PartyCategory
+:PartyCategory rdf:type owl:Class ;
+               owl:disjointUnionOf ( :Enterprise
+                                     :NaturalPerson
+                                     :PublicSectorBody
+                                   ) ;
+               rdfs:label "Party Category" .
+
+
+###  https://w3id.org/def/DAOnt#ProductData
+:ProductData rdf:type owl:Class ;
+             rdfs:subClassOf :Data ;
+             owl:disjointWith :RelatedServiceData ;
+             rdfs:comment "Article 2(15) - Generated by product use" ;
+             rdfs:label "Product Data" ;
+             <http://www.w3.org/2004/02/skos/core#definition> "Data generated by the use of a connected product. This data triggers user access rights under Article 4 when the user owns, rents, or leases the product. Distinct from related service data per Article 2(15) vs 2(16)."@en ;
+             <http://www.w3.org/2004/02/skos/core#example> "aliceTemperatureData (from smartThermostat1), charlieHealthData (from smartWatch1 - access denied = violation), RobotData1 (from industrialRobot1), machineData1 (from industrialSensor1)."@en ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "Datos de Producto"@es ,
+                                                             "Product Data"@en ;
+             <http://www.w3.org/2004/02/skos/core#scopeNote> "Defined in Article 2(15). COMPLIANCE TRIGGER: ProductData generated by ConnectedProduct creates Article 4 obligation on data holder to provide to user. Used in compliance Query 1 (B2C violations) via isGeneratedBy property. Disjoint with RelatedServiceData."@en .
+
+
+###  https://w3id.org/def/DAOnt#PublicSectorBody
+:PublicSectorBody rdf:type owl:Class ;
+                  rdfs:subClassOf :PartyCategory ;
+                  rdfs:comment "Article 2(28) - National/regional/local authority" ;
+                  rdfs:label "Public Sector Body" ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "State, regional, or local authority, body governed by public law, or public undertaking that can request data under exceptional need (Article 15). CRITICAL PROHIBITION: Article 19(2)(a) FORBIDS using received data to develop products/services competing with private sector."@en ;
+                  <http://www.w3.org/2004/02/skos/core#example> "HealthAuthority requests health data for emergency response (ALLOWED) but uses it to develop competing health app (PROHIBITED - Article 19(2)(a) violation detected in compliance query). Statistical office requests industrial data for GDP (ALLOWED). UnionBody (EU-level) follows same rules."@en ;
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Organismo del Sector Público"@es ,
+                                                                  "Public Sector Body"@en ;
+                  <http://www.w3.org/2004/02/skos/core#scopeNote> "Defined in Article 2(28). COMPLIANCE ENFORCEMENT: Must demonstrate exceptional need (Article 15). PROHIBITED from performing UseDataToDevelopCompetingProduct action - violation detectable via SPARQL query. Related to B2GDataSharing, ExceptionalNeed, hasExceptionalNeedFor, Article19_2_a_prohibition. Can be both PublicSectorBody and DataRecipient."@en .
+
+
+###  https://w3id.org/def/DAOnt#Qualification
+:Qualification rdf:type owl:Class ;
+               rdfs:label "Qualification" .
+
+
+###  https://w3id.org/def/DAOnt#RegulationDocument
+:RegulationDocument rdf:type owl:Class ;
+                    rdfs:subClassOf <http://www.estrellaproject.org/lkif-core/expression.owl#Legal_Document> ;
+                    rdfs:label "Regulation Document" .
+
+
+###  https://w3id.org/def/DAOnt#RegulativeRule
+:RegulativeRule rdf:type owl:Class ;
+                rdfs:subClassOf :LegalRule ;
+                rdfs:comment "Rule that prescribes behavior (obligations, permissions, prohibitions)" ;
+                rdfs:label "Regulative Rule" ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Legal rule that prescribes, permits, or prohibits specific behaviors. Encodes normative content of Data Act provisions. Distinguished from ConstitutiveRule (which defines concepts). Operationalizes compliance obligations through prescribes (Duty), permits (Permission), prohibits (Prohibition)."@en ;
+                <http://www.w3.org/2004/02/skos/core#example> "article4_1_rule (prescribes article4_1_obligation - holder must provide data to user), article8_6_rule (permits article8_6_permission - holder may refuse if trade secret), Article19_2_a_rule (prohibits article19_2_a_prohibition - public body cannot develop competing product)."@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Regla Regulativa"@es ,
+                                                                "Regulative Rule"@en ;
+                <http://www.w3.org/2004/02/skos/core#scopeNote> "BEHAVIORAL NORMS: RegulativeRules create enforceable obligations. isConstitutive=false distinguishes from ConstitutiveRule. Links to deontic specifications: prescribes Duty (Article 4 obligation), permits Permission (Article 8(6) refusal right), prohibits Prohibition (Article 19(2)(a) competitive use ban)."@en .
+
+
+###  https://w3id.org/def/DAOnt#RelatedService
+:RelatedService rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.w3.org/ns/odrl/2/Asset> ;
+                rdfs:comment "Article 2(6) - Digital service connected to product" ;
+                rdfs:label "Related Service" .
+
+
+###  https://w3id.org/def/DAOnt#RelatedServiceData
+:RelatedServiceData rdf:type owl:Class ;
+                    rdfs:subClassOf :Data ;
+                    rdfs:comment "Article 2(16) - From related service" ;
+                    rdfs:label "Related Service Data" ;
+                    <http://www.w3.org/2004/02/skos/core#definition> "Data generated by a digital service connected to or supporting a connected product (Article 2(16)). Distinct from ProductData but subject to similar access obligations. Covers cloud services, companion apps, and platform services related to product functionality."@en ;
+                    <http://www.w3.org/2004/02/skos/core#example> "Cloud-stored configuration data for smart home device, fitness tracking platform data linked to wearable, vehicle telematics processed by manufacturer's cloud service, companion app usage analytics."@en ;
+                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Datos de Servicio Relacionado"@es ,
+                                                                    "Related Service Data"@en ;
+                    <http://www.w3.org/2004/02/skos/core#scopeNote> "Article 2(16) definition. Disjoint with ProductData per owl:disjointWith. Generated by RelatedService (Article 2(6)) provided via providesRelatedService property. User access rights under Chapter II may extend to RelatedServiceData when essential for product use. Managed by RelatedServiceProvider."@en .
+
+
+###  https://w3id.org/def/DAOnt#RelatedServiceProvider
+:RelatedServiceProvider rdf:type owl:Class ;
+                        rdfs:subClassOf :DataHolder ,
+                                        :ServiceProvider ;
+                        rdfs:comment "Provides related service" ;
+                        rdfs:label "Related Service Provider" .
+
+
+###  https://w3id.org/def/DAOnt#RuleCondition
+:RuleCondition rdf:type owl:Class ;
+               rdfs:comment "Condition in rule antecedent or exception" ;
+               rdfs:label "Rule Condition" .
+
+
+###  https://w3id.org/def/DAOnt#SME
+:SME rdf:type owl:Class ;
+     rdfs:subClassOf :Enterprise ;
+     rdfs:label "SME" .
+
+
+###  https://w3id.org/def/DAOnt#ServiceProvider
+:ServiceProvider rdf:type owl:Class ;
+                 rdfs:subClassOf <https://www.w3.org/ns/odrl/2/Party> ;
+                 rdfs:comment "Abstract class for service providers" ;
+                 rdfs:label "Service Provider" .
+
+
+###  https://w3id.org/def/DAOnt#SmartContract
+:SmartContract rdf:type owl:Class ;
+               rdfs:comment "Article 36 - Automated execution" ;
+               rdfs:label "Smart Contract" ;
+               <http://www.w3.org/2004/02/skos/core#definition> "Computer program that automatically executes data sharing agreements or processes. Subject to Article 36 requirements including access termination mechanisms and compliance safeguards. Must be implementedBy compliant DataProcessingService."@en ;
+               <http://www.w3.org/2004/02/skos/core#example> "Automated data access control system, blockchain-based data sharing agreement, DLT-based consent management."@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Smart Contract"@en ;
+               <http://www.w3.org/2004/02/skos/core#scopeNote> "Article 36. implementedBy DataProcessingService. Must include safe termination, access control, and compliance verification mechanisms. Automates data sharing under DataSharingAgreement. Subject to unilateral termination rights."@en .
+
+
+###  https://w3id.org/def/DAOnt#TemporalEntity
+:TemporalEntity rdf:type owl:Class ;
+                rdfs:label "Temporal Entity" .
+
+
+###  https://w3id.org/def/DAOnt#ThirdParty
+:ThirdParty rdf:type owl:Class ;
+            rdfs:subClassOf :DataRecipient ;
+            rdfs:comment "Article 5 - Third party designated by user" ;
+            rdfs:label "Third Party" ;
+            <http://www.w3.org/2004/02/skos/core#definition> "A data recipient explicitly designated by the user to receive data directly from the data holder (Article 5). Enables users to share their product data with trusted service providers without intermediary steps. Data holder must honor designation."@en ;
+            <http://www.w3.org/2004/02/skos/core#example> "energyOptimizationService (third party designated by Alice to receive aliceTemperatureData). User-driven data sharing distinct from B2B requests under Article 8."@en ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Tercero"@es ,
+                                                            "Third Party"@en ;
+            <http://www.w3.org/2004/02/skos/core#scopeNote> "Article 5 right. USER EMPOWERMENT: Users can designate third parties via designatesThirdParty property. Data holder must provide data directly to designated third party. Related to AftermarketServiceProvider. Subclass of DataRecipient but initiated by user choice, not B2B request."@en .
+
+
+###  https://w3id.org/def/DAOnt#TimeInterval
+:TimeInterval rdf:type owl:Class ;
+              rdfs:subClassOf :TemporalEntity ;
+              rdfs:label "Time Interval" .
+
+
+###  https://w3id.org/def/DAOnt#TimePoint
+:TimePoint rdf:type owl:Class ;
+           rdfs:subClassOf :TemporalEntity ;
+           rdfs:label "Time Point" .
+
+
+###  https://w3id.org/def/DAOnt#UnfairTerm
+:UnfairTerm rdf:type owl:Class ;
+            rdfs:subClassOf :ContractualTerm ;
+            rdfs:comment "Article 13 - Unfair and not binding" ;
+            rdfs:label "Unfair Term" ;
+            <http://www.w3.org/2004/02/skos/core#definition> "Contractual term that fails FRAND requirements or imposes unjustified burdens on weaker parties, particularly consumers and SMEs. Not binding under Article 13. Includes terms with isFair=false, isReasonable=false, or isNonDiscriminatory=false."@en ;
+            <http://www.w3.org/2004/02/skos/core#example> "Terms in contract247 where isFair=false and isNonDiscriminatory=false constitute UnfairTerms. Excessive compensationAmount, discriminatory pricing, unreasonable contract duration are typical unfair terms."@en ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Cláusula Abusiva"@es ,
+                                                            "Unfair Term"@en ;
+            <http://www.w3.org/2004/02/skos/core#scopeNote> "Article 13 protection mechanism. LEGAL EFFECT: Unfair terms are UNENFORCEABLE. Applies primarily to B2B agreements (must be FRAND-compliant) and B2C agreements (consumer protection). Related to FRANDCondition - when isFair, isReasonable, or isNonDiscriminatory is false, term becomes unfair. Court-enforceable nullity."@en .
+
+
+###  https://w3id.org/def/DAOnt#UnionBody
+:UnionBody rdf:type owl:Class ;
+           rdfs:subClassOf :PublicSectorBody ;
+           rdfs:comment "Article 2(27) - EU body or agency" ;
+           rdfs:label "Union Body" .
+
+
+###  https://w3id.org/def/DAOnt#UseDataToDevelopCompetingProduct
+:UseDataToDevelopCompetingProduct rdf:type owl:Class ;
+                                  rdfs:subClassOf <https://www.w3.org/ns/odrl/2/Action> ;
+                                  rdfs:label "Use Data To Develop Competing Product" ;
+                                  <http://www.w3.org/2004/02/skos/core#definition> "PROHIBITED ACTION under Article 19(2)(a): Using data obtained through B2G data sharing (Chapter V) to develop or improve products or services that compete with private sector offerings. Applies ONLY to public sector bodies receiving data under exceptional need."@en ;
+                                  <http://www.w3.org/2004/02/skos/core#example> "HealthAuthority receives patient data for emergency monitoring - using it to develop competing health tracking app = VIOLATION (UsesDataToDevelopCompetingProduct1 instance violates Article 19(2)(a)). Public transport authority using traffic data for route optimization = ALLOWED (not competing with private sector)."@en ;
+                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Usar Datos para Desarrollar Producto Competidor"@es ,
+                                                                                  "Use Data To Develop Competing Product"@en ;
+                                  <http://www.w3.org/2004/02/skos/core#scopeNote> "CRITICAL PROHIBITION: Article 19(2)(a) explicitly forbids this action by PublicSectorBody. COMPLIANCE DETECTION: SPARQL query checks if PublicSectorBody performs this action - existence indicates violation. Related to B2GDataSharing, Article19_2_a_prohibition, PublicSectorBody via performsAction property."@en .
+
+
+###  https://w3id.org/def/DAOnt#User
+:User rdf:type owl:Class ;
+      rdfs:subClassOf <https://www.w3.org/ns/odrl/2/Party> ;
+      rdfs:comment "Article 2(12) - Natural or legal person who owns, rents, or leases a connected product" ;
+      rdfs:label "User" ;
+      <http://www.w3.org/2004/02/skos/core#definition> "Natural or legal person who owns, rents, or leases a connected product that generates data. Has FUNDAMENTAL RIGHTS: (1) Access data from their product (Article 4), (2) Designate third parties to receive data (Article 5), (3) Authorize B2B data sharing (Article 8(4)). Distinct from DataRecipient per Article 2(14)."@en ;
+      <http://www.w3.org/2004/02/skos/core#example> "Alice (consumer) owns smartThermostat1, requests aliceTemperatureData - holder must provide. factoryOwnerAcme authorizes B2B sharing in agreement247. Charlie requests charlieHealthData but watchManufacturer fails to provide (violation). User ≠ DataRecipient (disjoint classes)."@en ;
+      <http://www.w3.org/2004/02/skos/core#prefLabel> "User"@en ,
+                                                      "Usuario"@es ;
+      <http://www.w3.org/2004/02/skos/core#scopeNote> "Defined in Article 2(12). COMPLIANCE ROLES: (a) In B2C: requestsAccessTo triggers Article 4 obligation on holder, (b) In B2B: authorizedBy property makes B2B sharing lawful per Article 8(4). Related to ConsumerUser, EnterpriseUser, ownsOrUses, requestsAccessTo, hasAccessRight, designatesThirdParty properties."@en .
+
+
+###  https://w3id.org/def/DAOnt#UserAccessRight
+:UserAccessRight rdf:type owl:Class ;
+                 rdfs:subClassOf :DataAccessRight ;
+                 rdfs:comment "Article 4 - User's right" ;
+                 rdfs:label "User Access Right" ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "Specific instantiation of DataAccessRight for users under Article 4. Unconditional right to access product data without undue delay, free of charge, in machine-readable format. Central to B2C data sharing compliance."@en ;
+                 <http://www.w3.org/2004/02/skos/core#example> "aliceAccessRight (applicableArticle='Article 4') gives Alice unconditional right to aliceTemperatureData. watchManufacturer's failure to honor Charlie's right = Article 4(1) violation."@en ;
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "Derecho de Acceso del Usuario"@es ,
+                                                                 "User Access Right"@en ;
+                 <http://www.w3.org/2004/02/skos/core#scopeNote> "Article 4 right. COMPLIANCE CRITICAL: This right creates non-waivable obligation on data holders. Violation when user has UserAccessRight and requests data (requestsAccessTo) but holder fails to perform DataProvision. applicableArticle property links to 'Article 4'."@en .
+
+
+###  https://www.w3.org/ns/odrl/2/Action
+<https://www.w3.org/ns/odrl/2/Action> rdf:type owl:Class ;
+                                      rdfs:comment "An operation on an Asset." ;
+                                      rdfs:label "Action" .
+
+
+###  https://www.w3.org/ns/odrl/2/Agreement
+<https://www.w3.org/ns/odrl/2/Agreement> rdf:type owl:Class ;
+                                         rdfs:comment "A Policy that grants the assignee a Rule over an Asset from an assigner." ;
+                                         rdfs:label "Agreement" .
+
+
+###  https://www.w3.org/ns/odrl/2/Asset
+<https://www.w3.org/ns/odrl/2/Asset> rdf:type owl:Class ;
+                                     rdfs:comment "Abstract class for products, services, and data" ;
+                                     rdfs:label "Asset" .
+
+
+###  https://www.w3.org/ns/odrl/2/Constraint
+<https://www.w3.org/ns/odrl/2/Constraint> rdf:type owl:Class ;
+                                          rdfs:comment "A boolean expression that refines the semantics of an Action and Party/Asset Collection or declare the conditions applicable to a Rule." ;
+                                          rdfs:label "Constraint" .
+
+
+###  https://www.w3.org/ns/odrl/2/Duty
+<https://www.w3.org/ns/odrl/2/Duty> rdf:type owl:Class ;
+                                    rdfs:subClassOf <https://www.w3.org/ns/odrl/2/Rule> ,
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :hasDutyBearer ;
+                                                      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                      owl:onClass <https://www.w3.org/ns/odrl/2/Party>
+                                                    ] ;
+                                    rdfs:comment "The obligation to perform an Action" ;
+                                    rdfs:label "Duty" .
+
+
+###  https://www.w3.org/ns/odrl/2/Party
+<https://www.w3.org/ns/odrl/2/Party> rdf:type owl:Class ;
+                                     rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :hasPartyCategory ;
+                                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                       owl:onClass :PartyCategory
+                                                     ] ;
+                                     rdfs:comment "An entity or a collection of entities that undertake Roles in a Rule." ;
+                                     rdfs:label "Party" .
+
+
+###  https://www.w3.org/ns/odrl/2/Permission
+<https://www.w3.org/ns/odrl/2/Permission> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://www.w3.org/ns/odrl/2/Rule> ;
+                                          rdfs:comment "The ability to perform an Action over an Asset." ;
+                                          rdfs:label "Permission" .
+
+
+###  https://www.w3.org/ns/odrl/2/Prohibition
+<https://www.w3.org/ns/odrl/2/Prohibition> rdf:type owl:Class ;
+                                           rdfs:subClassOf <https://www.w3.org/ns/odrl/2/Rule> ;
+                                           rdfs:comment "The inability to perform an Action over an Asset." ;
+                                           rdfs:label "Prohibition" .
+
+
+###  https://www.w3.org/ns/odrl/2/Rule
+<https://www.w3.org/ns/odrl/2/Rule> rdf:type owl:Class ;
+                                    rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                      owl:onProperty <https://www.w3.org/ns/odrl/2/action> ;
+                                                      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                      owl:onClass <https://www.w3.org/ns/odrl/2/Action>
+                                                    ] ;
+                                    owl:disjointUnionOf ( <https://www.w3.org/ns/odrl/2/Duty>
+                                                          <https://www.w3.org/ns/odrl/2/Permission>
+                                                          <https://www.w3.org/ns/odrl/2/Prohibition>
+                                                        ) ;
+                                    rdfs:comment "An abstract concept that represents the common characteristics of Permissions, Prohibitions, and Duties." ;
+                                    rdfs:label "Rule" .
+
+
+###  https://www.w3.org/ns/odrl/2/purpose
+<https://www.w3.org/ns/odrl/2/purpose> rdf:type owl:Class ;
+                                       rdfs:comment "A defined purpose for exercising the action of the Rule." ;
+                                       rdfs:label "Purpose" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

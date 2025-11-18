@@ -1,0 +1,239 @@
+[ {
+  "@id" : "http://www.semanticweb.org/dataact#B2GDataSharing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#ConnectedProduct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#ConsumerUser",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#DataHolder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#DataRecipient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#DataRequest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#DataSharingAgreement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#ExceptionalNeed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#Manufacturer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#ProductData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#PublicSectorBody",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#agreementDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#b2gDataRequest191",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/dataact#hasDeadline" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-03-25"
+  } ],
+  "http://www.semanticweb.org/dataact#respondsTo" : [ {
+    "@id" : "http://www.semanticweb.org/dataact#publicHealthEmergency2024"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/dataact#DataRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "B2G Data Request 191"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#b2gSharingGonzalo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/dataact#governedBy" : [ {
+    "@id" : "http://www.semanticweb.org/dataact#contract191"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/dataact#B2GDataSharing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "B2G Sharing - Gonzalo"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#contract191",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/dataact#agreementDate" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2024-03-20T09:00:00Z"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/dataact#DataSharingAgreement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Contract 191 - Public Health Emergency"
+  } ],
+  "https://w3c.github.io/dpv/2.2/dpv/#hasRecipient" : [ {
+    "@id" : "http://www.semanticweb.org/dataact#healthAuthority"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#generatesData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#gonzalo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/dataact#ownsOrUses" : [ {
+    "@id" : "http://www.semanticweb.org/dataact#healthMonitor1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/dataact#ConsumerUser"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Gonzalo"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#gonzaloHealthData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/dataact#hasDescription" : [ {
+    "@value" : "Vital signs, disease indicators, health metrics for pandemic monitoring"
+  } ],
+  "http://www.semanticweb.org/dataact#isGeneratedBy" : [ {
+    "@id" : "http://www.semanticweb.org/dataact#healthMonitor1"
+  } ],
+  "http://www.semanticweb.org/dataact#isMachineReadable" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/dataact#isPersonal" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/dataact#ProductData"
+  }, {
+    "@id" : "https://w3c.github.io/dpv/2.2/dpv/#PersonalData"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Gonzalo Health Data"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#governedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#hasDeadline",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#hasDescription",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#hasExceptionalNeedFor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#healthAuthority",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/dataact#hasExceptionalNeedFor" : [ {
+    "@id" : "http://www.semanticweb.org/dataact#gonzaloHealthData"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/dataact#DataRecipient"
+  }, {
+    "@id" : "http://www.semanticweb.org/dataact#PublicSectorBody"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Health Authority"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#healthDeviceManufacturer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/dataact#DataHolder"
+  }, {
+    "@id" : "http://www.semanticweb.org/dataact#Manufacturer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Health Device Manufacturer"
+  } ],
+  "https://w3c.github.io/dpv/2.2/dpv/#hasData" : [ {
+    "@id" : "http://www.semanticweb.org/dataact#gonzaloHealthData"
+  } ],
+  "https://w3c.github.io/dpv/2.2/dpv/#hasRecipient" : [ {
+    "@id" : "http://www.semanticweb.org/dataact#healthAuthority"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#healthMonitor1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/dataact#generatesData" : [ {
+    "@id" : "http://www.semanticweb.org/dataact#gonzaloHealthData"
+  } ],
+  "http://www.semanticweb.org/dataact#manufacturerIdentifier" : [ {
+    "@value" : "HEALTH-MON-2024-GZ"
+  } ],
+  "http://www.semanticweb.org/dataact#productCategory" : [ {
+    "@value" : "Medical Device"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/dataact#ConnectedProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Health Monitor 1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#isGeneratedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#isMachineReadable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#isPersonal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#manufacturerIdentifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#ownsOrUses",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#productCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#publicHealthEmergency2024",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/dataact#hasDescription" : [ {
+    "@value" : "Pandemic monitoring and public health response coordination"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/dataact#ExceptionalNeed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Public Health Emergency 2024"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact#respondsTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/dataact/contracts/b2g-health",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "\n      ✅ COMPLIANT scenario — Public authority uses data under exceptional need only (Article 19(2)(a) respected).\n    "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Public Health Emergency Data Sharing Contract (Compliant)"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://www.semanticweb.org/dataact"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "https://w3c.github.io/dpv/2.2/dpv/#PersonalData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3c.github.io/dpv/2.2/dpv/#hasData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3c.github.io/dpv/2.2/dpv/#hasRecipient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]
