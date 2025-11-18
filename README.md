@@ -1,6 +1,9 @@
 ## DAOnt: EU Data Act Ontology
 
-Formal Ontology for Automated Compliance with Regulation (EU) 2023/2854
+Formal Ontology for Automated Compliance with Regulation (EU) 2023/2854 
+
+
+Ontology published at: <https://w3id.org/def/daont>
 
 ### Overview
 
