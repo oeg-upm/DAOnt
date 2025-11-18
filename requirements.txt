@@ -1,7 +1,0 @@
-streamlit>=1.40
-pandas>=2.2
-plotly>=5.24
-fpdf2>=2.7
-rdflib>=7.0
-SPARQLWrapper>=2.0
-owlready2
