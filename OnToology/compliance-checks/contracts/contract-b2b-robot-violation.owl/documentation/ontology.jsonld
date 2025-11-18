@@ -1,202 +1,202 @@
 [ {
-  "@id" : "http://www.semanticweb.org/dataact#AftermarketServiceProvider",
+  "@id" : "http://www.semanticweb.org/daont#AftermarketServiceProvider",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact#B2BDataSharing",
+  "@id" : "http://www.semanticweb.org/daont#B2BDataSharing",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact#ConnectedProduct",
+  "@id" : "http://www.semanticweb.org/daont#ConnectedProduct",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact#DataHolder",
+  "@id" : "http://www.semanticweb.org/daont#DataHolder",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact#DataRecipient",
+  "@id" : "http://www.semanticweb.org/daont#DataRecipient",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact#DataSharingAgreement",
+  "@id" : "http://www.semanticweb.org/daont#DataSharingAgreement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact#EnterpriseUser",
+  "@id" : "http://www.semanticweb.org/daont#EnterpriseUser",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact#FRANDCondition",
+  "@id" : "http://www.semanticweb.org/daont#FRANDCondition",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact#Manufacturer",
+  "@id" : "http://www.semanticweb.org/daont#Manufacturer",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact#ProductData",
+  "@id" : "http://www.semanticweb.org/daont#ProductData",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact#User",
+  "@id" : "http://www.semanticweb.org/daont#User",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact#agreement247",
+  "@id" : "http://www.semanticweb.org/daont#agreement247",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.semanticweb.org/dataact#authorizedBy" : [ {
-    "@id" : "http://www.semanticweb.org/dataact#factoryOwnerAcme"
+  "http://www.semanticweb.org/daont#authorizedBy" : [ {
+    "@id" : "http://www.semanticweb.org/daont#factoryOwnerAcme"
   } ],
-  "http://www.semanticweb.org/dataact#governedBy" : [ {
-    "@id" : "http://www.semanticweb.org/dataact#contract247"
+  "http://www.semanticweb.org/daont#governedBy" : [ {
+    "@id" : "http://www.semanticweb.org/daont#contract247"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/dataact#B2BDataSharing"
+    "@id" : "http://www.semanticweb.org/daont#B2BDataSharing"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Agreement 247"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact#agreementDate",
+  "@id" : "http://www.semanticweb.org/daont#agreementDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact#authorizedBy",
+  "@id" : "http://www.semanticweb.org/daont#authorizedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact#autoRepair",
+  "@id" : "http://www.semanticweb.org/daont#autoRepair",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/dataact#AftermarketServiceProvider"
+    "@id" : "http://www.semanticweb.org/daont#AftermarketServiceProvider"
   }, {
-    "@id" : "http://www.semanticweb.org/dataact#DataRecipient"
+    "@id" : "http://www.semanticweb.org/daont#DataRecipient"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "AutoRepair Ltd"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact#compensationAmount",
+  "@id" : "http://www.semanticweb.org/daont#compensationAmount",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact#contract247",
+  "@id" : "http://www.semanticweb.org/daont#contract247",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.semanticweb.org/dataact#agreementDate" : [ {
+  "http://www.semanticweb.org/daont#agreementDate" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "@value" : "2024-02-10T14:30:00Z"
   } ],
-  "http://www.semanticweb.org/dataact#compensationAmount" : [ {
+  "http://www.semanticweb.org/daont#compensationAmount" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
     "@value" : "800.00"
   } ],
-  "http://www.semanticweb.org/dataact#subjectToFRAND" : [ {
-    "@id" : "http://www.semanticweb.org/dataact#frand247"
+  "http://www.semanticweb.org/daont#subjectToFRAND" : [ {
+    "@id" : "http://www.semanticweb.org/daont#frand247"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/dataact#DataSharingAgreement"
+    "@id" : "http://www.semanticweb.org/daont#DataSharingAgreement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Contract 247 - Robot Maintenance"
   } ],
   "https://w3c.github.io/dpv/2.2/dpv/#hasRecipient" : [ {
-    "@id" : "http://www.semanticweb.org/dataact#autoRepair"
+    "@id" : "http://www.semanticweb.org/daont#autoRepair"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact#factoryOwnerAcme",
+  "@id" : "http://www.semanticweb.org/daont#factoryOwnerAcme",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.semanticweb.org/dataact#ownsOrUses" : [ {
-    "@id" : "http://www.semanticweb.org/dataact#industrialRobot1"
+  "http://www.semanticweb.org/daont#ownsOrUses" : [ {
+    "@id" : "http://www.semanticweb.org/daont#industrialRobot1"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/dataact#EnterpriseUser"
+    "@id" : "http://www.semanticweb.org/daont#EnterpriseUser"
   }, {
-    "@id" : "http://www.semanticweb.org/dataact#User"
+    "@id" : "http://www.semanticweb.org/daont#User"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Factory Owner ACME"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact#frand247",
+  "@id" : "http://www.semanticweb.org/daont#frand247",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.semanticweb.org/dataact#isFair" : [ {
+  "http://www.semanticweb.org/daont#isFair" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
     "@value" : "true"
   } ],
-  "http://www.semanticweb.org/dataact#isNonDiscriminatory" : [ {
+  "http://www.semanticweb.org/daont#isNonDiscriminatory" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
     "@value" : "true"
   } ],
-  "http://www.semanticweb.org/dataact#isReasonable" : [ {
+  "http://www.semanticweb.org/daont#isReasonable" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
     "@value" : "true"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/dataact#FRANDCondition"
+    "@id" : "http://www.semanticweb.org/daont#FRANDCondition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "FRAND Condition 247"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact#generatesData",
+  "@id" : "http://www.semanticweb.org/daont#generatesData",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact#governedBy",
+  "@id" : "http://www.semanticweb.org/daont#governedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact#hasDescription",
+  "@id" : "http://www.semanticweb.org/daont#hasDescription",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact#industrialRobot1",
+  "@id" : "http://www.semanticweb.org/daont#industrialRobot1",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.semanticweb.org/dataact#generatesData" : [ {
-    "@id" : "http://www.semanticweb.org/dataact#robotData1"
+  "http://www.semanticweb.org/daont#generatesData" : [ {
+    "@id" : "http://www.semanticweb.org/daont#robotData1"
   } ],
-  "http://www.semanticweb.org/dataact#manufacturerIdentifier" : [ {
+  "http://www.semanticweb.org/daont#manufacturerIdentifier" : [ {
     "@value" : "ROBOT-IND-2024-001"
   } ],
-  "http://www.semanticweb.org/dataact#productCategory" : [ {
+  "http://www.semanticweb.org/daont#productCategory" : [ {
     "@value" : "Industrial Automation"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/dataact#ConnectedProduct"
+    "@id" : "http://www.semanticweb.org/daont#ConnectedProduct"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Industrial Robot 1"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact#isFair",
+  "@id" : "http://www.semanticweb.org/daont#isFair",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact#isGeneratedBy",
+  "@id" : "http://www.semanticweb.org/daont#isGeneratedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact#isMachineReadable",
+  "@id" : "http://www.semanticweb.org/daont#isMachineReadable",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact#isNonDiscriminatory",
+  "@id" : "http://www.semanticweb.org/daont#isNonDiscriminatory",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact#isPersonal",
+  "@id" : "http://www.semanticweb.org/daont#isPersonal",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact#isReasonable",
+  "@id" : "http://www.semanticweb.org/daont#isReasonable",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact#manufacturerIdentifier",
+  "@id" : "http://www.semanticweb.org/daont#manufacturerIdentifier",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact#ownsOrUses",
+  "@id" : "http://www.semanticweb.org/daont#ownsOrUses",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact#productCategory",
+  "@id" : "http://www.semanticweb.org/daont#productCategory",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact#robotData1",
+  "@id" : "http://www.semanticweb.org/daont#robotData1",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.semanticweb.org/dataact#hasDescription" : [ {
+  "http://www.semanticweb.org/daont#hasDescription" : [ {
     "@value" : "Operational metrics, performance data, maintenance logs"
   } ],
-  "http://www.semanticweb.org/dataact#isGeneratedBy" : [ {
-    "@id" : "http://www.semanticweb.org/dataact#industrialRobot1"
+  "http://www.semanticweb.org/daont#isGeneratedBy" : [ {
+    "@id" : "http://www.semanticweb.org/daont#industrialRobot1"
   } ],
-  "http://www.semanticweb.org/dataact#isMachineReadable" : [ {
+  "http://www.semanticweb.org/daont#isMachineReadable" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
     "@value" : "true"
   } ],
-  "http://www.semanticweb.org/dataact#isPersonal" : [ {
+  "http://www.semanticweb.org/daont#isPersonal" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
     "@value" : "false"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/dataact#ProductData"
+    "@id" : "http://www.semanticweb.org/daont#ProductData"
   }, {
     "@id" : "https://w3c.github.io/dpv/2.2/dpv/#NonPersonalData"
   } ],
@@ -204,24 +204,24 @@
     "@value" : "Robot Data 1"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact#robotManufacturer",
+  "@id" : "http://www.semanticweb.org/daont#robotManufacturer",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/dataact#DataHolder"
+    "@id" : "http://www.semanticweb.org/daont#DataHolder"
   }, {
-    "@id" : "http://www.semanticweb.org/dataact#Manufacturer"
+    "@id" : "http://www.semanticweb.org/daont#Manufacturer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Robot Manufacturer"
   } ],
   "https://w3c.github.io/dpv/2.2/dpv/#hasData" : [ {
-    "@id" : "http://www.semanticweb.org/dataact#robotData1"
+    "@id" : "http://www.semanticweb.org/daont#robotData1"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact#subjectToFRAND",
+  "@id" : "http://www.semanticweb.org/daont#subjectToFRAND",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.semanticweb.org/dataact/contracts/b2b-robot",
+  "@id" : "http://www.semanticweb.org/daont/contracts/b2b-robot",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "\n      ❌ VIOLATION scenario — Manufacturer refuses to share data without TradeSecret justification.\n    "
@@ -230,7 +230,7 @@
     "@value" : "Industrial Robot Maintenance Contract (Violation)"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
-    "@id" : "http://www.semanticweb.org/dataact"
+    "@id" : "http://www.semanticweb.org/daont"
   } ]
 }, {
   "@id" : "https://w3c.github.io/dpv/2.2/dpv/#NonPersonalData",

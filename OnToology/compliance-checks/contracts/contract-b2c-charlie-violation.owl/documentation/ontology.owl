@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/dataact/contracts/b2c-charlie#"
-     xml:base="http://www.semanticweb.org/dataact/contracts/b2c-charlie"
+<rdf:RDF xmlns="http://www.semanticweb.org/daont/contracts/b2c-charlie#"
+     xml:base="http://www.semanticweb.org/daont/contracts/b2c-charlie"
      xmlns:dpv="https://w3c.github.io/dpv/2.2/dpv/#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:dataact="http://www.semanticweb.org/dataact#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/dataact/contracts/b2c-charlie">
-        <owl:imports rdf:resource="http://www.semanticweb.org/dataact"/>
+     xmlns:daont="http://www.semanticweb.org/daont#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/daont/contracts/b2c-charlie">
+        <owl:imports rdf:resource="http://www.semanticweb.org/daont"/>
         <rdfs:comment>
-      ❌ VIOLATION scenario — Manufacturer does NOT perform DataProvision action (Article 4(1) violated).
+      ❌ VIOLATION scenario — Manufacturer does NOT ProvideData (Article 4(1) violated).
     </rdfs:comment>
         <rdfs:label>Charlie&apos;s Smart Watch Contract (Violation)</rdfs:label>
     </owl:Ontology>
@@ -30,94 +30,94 @@
     
 
 
-    <!-- http://www.semanticweb.org/dataact#agreementDate -->
+    <!-- http://www.semanticweb.org/daont#agreementDate -->
 
 
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/dataact#agreementDate"/>
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/daont#agreementDate"/>
     
 
 
-    <!-- http://www.semanticweb.org/dataact#generatesData -->
+    <!-- http://www.semanticweb.org/daont#generatesData -->
 
 
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/dataact#generatesData"/>
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/daont#generatesData"/>
     
 
 
-    <!-- http://www.semanticweb.org/dataact#governedBy -->
+    <!-- http://www.semanticweb.org/daont#governedBy -->
 
 
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/dataact#governedBy"/>
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/daont#governedBy"/>
     
 
 
-    <!-- http://www.semanticweb.org/dataact#hasArticleNumber -->
+    <!-- http://www.semanticweb.org/daont#hasArticleNumber -->
 
 
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/dataact#hasArticleNumber"/>
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/daont#hasArticleNumber"/>
     
 
 
-    <!-- http://www.semanticweb.org/dataact#hasDescription -->
+    <!-- http://www.semanticweb.org/daont#hasDescription -->
 
 
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/dataact#hasDescription"/>
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/daont#hasDescription"/>
     
 
 
-    <!-- http://www.semanticweb.org/dataact#hasLegalSource -->
+    <!-- http://www.semanticweb.org/daont#hasLegalSource -->
 
 
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/dataact#hasLegalSource"/>
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/daont#hasLegalSource"/>
     
 
 
-    <!-- http://www.semanticweb.org/dataact#isGeneratedBy -->
+    <!-- http://www.semanticweb.org/daont#isGeneratedBy -->
 
 
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/dataact#isGeneratedBy"/>
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/daont#isGeneratedBy"/>
     
 
 
-    <!-- http://www.semanticweb.org/dataact#isMachineReadable -->
+    <!-- http://www.semanticweb.org/daont#isMachineReadable -->
 
 
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/dataact#isMachineReadable"/>
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/daont#isMachineReadable"/>
     
 
 
-    <!-- http://www.semanticweb.org/dataact#isPersonal -->
+    <!-- http://www.semanticweb.org/daont#isPersonal -->
 
 
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/dataact#isPersonal"/>
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/daont#isPersonal"/>
     
 
 
-    <!-- http://www.semanticweb.org/dataact#manufacturerIdentifier -->
+    <!-- http://www.semanticweb.org/daont#manufacturerIdentifier -->
 
 
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/dataact#manufacturerIdentifier"/>
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/daont#manufacturerIdentifier"/>
     
 
 
-    <!-- http://www.semanticweb.org/dataact#ownsOrUses -->
+    <!-- http://www.semanticweb.org/daont#ownsOrUses -->
 
 
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/dataact#ownsOrUses"/>
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/daont#ownsOrUses"/>
     
 
 
-    <!-- http://www.semanticweb.org/dataact#productCategory -->
+    <!-- http://www.semanticweb.org/daont#productCategory -->
 
 
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/dataact#productCategory"/>
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/daont#productCategory"/>
     
 
 
-    <!-- http://www.semanticweb.org/dataact#requestsAccessTo -->
+    <!-- http://www.semanticweb.org/daont#requestsAccessTo -->
 
 
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/dataact#requestsAccessTo"/>
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/daont#requestsAccessTo"/>
     
 
 
@@ -147,59 +147,59 @@
     
 
 
-    <!-- http://www.semanticweb.org/dataact#B2CDataSharing -->
+    <!-- http://www.semanticweb.org/daont#B2CDataSharing -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/dataact#B2CDataSharing"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/daont#B2CDataSharing"/>
     
 
 
-    <!-- http://www.semanticweb.org/dataact#ConnectedProduct -->
+    <!-- http://www.semanticweb.org/daont#ConnectedProduct -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/dataact#ConnectedProduct"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/daont#ConnectedProduct"/>
     
 
 
-    <!-- http://www.semanticweb.org/dataact#ConsumerUser -->
+    <!-- http://www.semanticweb.org/daont#ConsumerUser -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/dataact#ConsumerUser"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/daont#ConsumerUser"/>
     
 
 
-    <!-- http://www.semanticweb.org/dataact#DataHolder -->
+    <!-- http://www.semanticweb.org/daont#DataHolder -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/dataact#DataHolder"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/daont#DataHolder"/>
     
 
 
-    <!-- http://www.semanticweb.org/dataact#DataSharingAgreement -->
+    <!-- http://www.semanticweb.org/daont#DataSharingAgreement -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/dataact#DataSharingAgreement"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/daont#DataSharingAgreement"/>
     
 
 
-    <!-- http://www.semanticweb.org/dataact#LegalReference -->
+    <!-- http://www.semanticweb.org/daont#LegalReference -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/dataact#LegalReference"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/daont#LegalReference"/>
     
 
 
-    <!-- http://www.semanticweb.org/dataact#Manufacturer -->
+    <!-- http://www.semanticweb.org/daont#Manufacturer -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/dataact#Manufacturer"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/daont#Manufacturer"/>
     
 
 
-    <!-- http://www.semanticweb.org/dataact#ProductData -->
+    <!-- http://www.semanticweb.org/daont#ProductData -->
 
 
-    <owl:Class rdf:about="http://www.semanticweb.org/dataact#ProductData"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/daont#ProductData"/>
     
 
 
@@ -222,89 +222,89 @@
     
 
 
-    <!-- http://www.semanticweb.org/dataact#Article4_1_DataAct -->
+    <!-- http://www.semanticweb.org/daont#Article4_1_daont -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dataact#Article4_1_DataAct">
-        <rdf:type rdf:resource="http://www.semanticweb.org/dataact#LegalReference"/>
-        <dataact:hasArticleNumber>4(1)</dataact:hasArticleNumber>
-        <dataact:hasLegalSource>Regulation (EU) 2023/2854 – Data Act</dataact:hasLegalSource>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daont#Article4_1_daont">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daont#LegalReference"/>
+        <daont:hasArticleNumber>4(1)</daont:hasArticleNumber>
+        <daont:hasLegalSource>Regulation (EU) 2023/2854 – Data Act</daont:hasLegalSource>
         <rdfs:label>Article 4(1) – User Access Rights</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/dataact#b2cSharing_charlie -->
+    <!-- http://www.semanticweb.org/daont#b2cSharing_charlie -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dataact#b2cSharing_charlie">
-        <rdf:type rdf:resource="http://www.semanticweb.org/dataact#B2CDataSharing"/>
-        <dataact:governedBy rdf:resource="http://www.semanticweb.org/dataact#contract_charlie"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daont#b2cSharing_charlie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daont#B2CDataSharing"/>
+        <daont:governedBy rdf:resource="http://www.semanticweb.org/daont#contract_charlie"/>
         <rdfs:label>B2C Sharing - Charlie</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/dataact#charlie -->
+    <!-- http://www.semanticweb.org/daont#charlie -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dataact#charlie">
-        <rdf:type rdf:resource="http://www.semanticweb.org/dataact#ConsumerUser"/>
-        <dataact:ownsOrUses rdf:resource="http://www.semanticweb.org/dataact#smartWatch1"/>
-        <dataact:requestsAccessTo rdf:resource="http://www.semanticweb.org/dataact#charlieHealthData"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daont#charlie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daont#ConsumerUser"/>
+        <daont:ownsOrUses rdf:resource="http://www.semanticweb.org/daont#smartWatch1"/>
+        <daont:requestsAccessTo rdf:resource="http://www.semanticweb.org/daont#charlieHealthData"/>
         <rdfs:label>Charlie</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/dataact#charlieHealthData -->
+    <!-- http://www.semanticweb.org/daont#charlieHealthData -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dataact#charlieHealthData">
-        <rdf:type rdf:resource="http://www.semanticweb.org/dataact#ProductData"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daont#charlieHealthData">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daont#ProductData"/>
         <rdf:type rdf:resource="https://w3c.github.io/dpv/2.2/dpv/#PersonalData"/>
-        <dataact:hasDescription>Heart rate, steps, sleep patterns, activity data</dataact:hasDescription>
-        <dataact:isGeneratedBy rdf:resource="http://www.semanticweb.org/dataact#smartWatch1"/>
-        <dataact:isMachineReadable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</dataact:isMachineReadable>
-        <dataact:isPersonal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</dataact:isPersonal>
+        <daont:hasDescription>Heart rate, steps, sleep patterns, activity data</daont:hasDescription>
+        <daont:isGeneratedBy rdf:resource="http://www.semanticweb.org/daont#smartWatch1"/>
+        <daont:isMachineReadable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</daont:isMachineReadable>
+        <daont:isPersonal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</daont:isPersonal>
         <rdfs:label>Charlie Health Data</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/dataact#contract_charlie -->
+    <!-- http://www.semanticweb.org/daont#contract_charlie -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dataact#contract_charlie">
-        <rdf:type rdf:resource="http://www.semanticweb.org/dataact#DataSharingAgreement"/>
-        <dataact:agreementDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-15T10:00:00Z</dataact:agreementDate>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daont#contract_charlie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daont#DataSharingAgreement"/>
+        <daont:agreementDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-15T10:00:00Z</daont:agreementDate>
         <rdfs:label>Charlie&apos;s Smart Watch Contract</rdfs:label>
-        <dpv:hasRecipient rdf:resource="http://www.semanticweb.org/dataact#charlie"/>
+        <dpv:hasRecipient rdf:resource="http://www.semanticweb.org/daont#charlie"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/dataact#smartWatch1 -->
+    <!-- http://www.semanticweb.org/daont#smartWatch1 -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dataact#smartWatch1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/dataact#ConnectedProduct"/>
-        <dataact:generatesData rdf:resource="http://www.semanticweb.org/dataact#charlieHealthData"/>
-        <dataact:manufacturerIdentifier>WATCH-2024-CH001</dataact:manufacturerIdentifier>
-        <dataact:productCategory>Wearable Health Device</dataact:productCategory>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daont#smartWatch1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daont#ConnectedProduct"/>
+        <daont:generatesData rdf:resource="http://www.semanticweb.org/daont#charlieHealthData"/>
+        <daont:manufacturerIdentifier>WATCH-2024-CH001</daont:manufacturerIdentifier>
+        <daont:productCategory>Wearable Health Device</daont:productCategory>
         <rdfs:label>Smart Watch 1</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/dataact#watchManufacturer -->
+    <!-- http://www.semanticweb.org/daont#watchManufacturer -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dataact#watchManufacturer">
-        <rdf:type rdf:resource="http://www.semanticweb.org/dataact#DataHolder"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/dataact#Manufacturer"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/daont#watchManufacturer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/daont#DataHolder"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/daont#Manufacturer"/>
         <rdfs:label>Watch Manufacturer</rdfs:label>
-        <dpv:hasData rdf:resource="http://www.semanticweb.org/dataact#charlieHealthData"/>
+        <dpv:hasData rdf:resource="http://www.semanticweb.org/daont#charlieHealthData"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
