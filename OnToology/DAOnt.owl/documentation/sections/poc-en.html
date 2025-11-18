@@ -1,0 +1,40 @@
+<h2 id="desc" class="list">Proof-of-Concept - Automated Reasoning Examples Across B2C, B2B, and B2G<span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+
+
+In this section, we present a proof of concept that illustrates how DAOnt enables automated compliance checking across different regulatory contexts of the Data Act. We analyse three representative articles, each corresponding to a distinct compliance modality—mandatory obligations, conditional permissions, and absolute prohibitions—and spanning the B2C, B2B, and B2G settings of the regulation. These examples demonstrate how the ontology captures normative structures with sufficient expressiveness to support automated reasoning. Table 2 provides a comparative overview of the formal representations used in each case.<br>
+
+
+    <h3 id="classes-headline" class="list">Automated Reasoning Examples Across B2C, B2B, and B2G</h3>
+
+    To demonstrate compliance verification capabilities, we developed six contract examples instantiating both compliant and non-compliant scenarios across the three data sharing contexts: B2C, B2B, and B2G. These six OWL files are available on the GitHub repository.<br>
+
+    <b>B2C Context (Code Snippet 1)</b>.<br>
+    In the violation scenario, charlie (a ConsumerUser) owns smartWatch1, which generates charlieHealthData. Charlie requests access to these data, but watchManufacturer (a DataHolder and Manufacturer) fails to perform any DataProvision action, thereby violating the mandatory obligation in Article~4(1). Data sharing is governed by contract\_charlie. <br>
+    To detect this violation automatically, the SPARQL query in Listing~\ref{lst:b2c-missing-obligation searches for B2C data-sharing cases where a ConsumerUser requests access to data linked to a product they own or use, and checks whether the associated DataHolder performs the required DataProvision action. The FILTER NOT EXISTS block encodes the notion of a missing obligation: if no DataProvision action is found, the pattern is flagged as non-compliant. The corresponding compliant scenario satisfies the obligation, and therefore the query does not return violations.<br>
+
+
+        
+
+
+
+    <b>B2B Context (Code Snippet 2)</b>. <br>
+    In the violation scenario, factoryOwnerAcme (an EnterpriseUser) owns industrialRobot1, which generates robotData1. The factory owner authorises autoRepair (an AftermarketServiceProvider and DataRecipient) to access these data through agreement247, governed by contract247, which specifies FRAND-compliant terms (frand247 with isFair, isReasonable, and isNonDiscriminatory all set to true). Despite these conditions, robotManufacturer (a DataHolder) refuses to share the data without providing a trade secret justification, violating the conditional sharing requirement in Article 8(6). The compliant scenario provides access under the same FRAND conditions and includes a valid justification whenever disclosure is refused.<br>
+    To detect this violation automatically, the SPARQL query in Listing 2 searches for B2B datasharing cases where a DataHolder does not perform the required DataProvision action and simultaneously fails to provide a containsTradeSecret justification. The first FILTER NOT EXISTS block encodes the absence of the mandatory action, while the second captures the absence of the legally permitted exception. When both conditions hold, the query precisely identifies the non-compliant behaviour described in Article 8(6).<br>
+
+    <b>B2G Context (Code Snippet 3)</b>. <br>
+    In the violation scenario, gonzalo (a ConsumerUser) owns healthMonitor1, which generates gonzaloHealthData. The healthAuthority (a PublicSectorBody and DataRecipient) legitimately requests access to these data from the healthDeviceManufacturer under publicHealthEmergency2024, an instance of ExceptionalNeed authorising B2G sharing for pandemic monitoring. This exchange is governed by contract191. However, after obtaining the data, the authority performs competitiveProductDevelopment1 (a UseDataToDevelopCompetingProduct action), thus using the data to develop a competing health application — anexplicit violation of the absolute prohibition in Article 19(2)(a). The compliant scenario demonstrates lawful use restricted strictly to the declared public interest purpose.<br>
+    To detect this violation automatically, the SPARQL query in Listing 3 searches for B2G data-sharing cases where a PublicSectorBody performs an action classified as UseDataToDevelopCompetingProduct. Unlike the B2C and B2B contexts, which require detecting missing obligations or missing exceptions, Article 19(2)(a) defines an absolute prohibition. For this reason, the query simply checks for the presence of the prohibited action; any match directly corresponds to non-compliance according to the regulation.<br>
+
+    These queries illustrate how SPARQL operationalises the semantic structures defined in DAOnt to support automated compliance checking. By encoding mandatory obligations, conditional permissions, and absolute prohibitions as graph patterns, the queries leverage the ontology's formal semantics to detect violations directly from the data. This shows the practical value of combining ontology-driven modelling with query-based reasoning: compliance verification becomes scalable, transparent, and auditable, and regulatory requirements can be enforced without bespoke procedural logic.
+
+
+<!-- <img src="https://github.com/oeg-upm/DAOnt/blob/main/diagrams/Diagram_Art_4-1.drawio.png?raw=true" style="height: 570px; width: 1080px;" alt="Diagram - Art. 4(1) Data Act">
+<img src="https://github.com/oeg-upm/DAOnt/blob/main/diagrams/Diagram_Art_8-6.drawio.png?raw=true" style="height: 570px; width: 1080px;" alt="Diagram - Art. 8(6) Data Act">
+<img src="https://github.com/oeg-upm/DAOnt/blob/main/diagrams/Diagram_Art_19-2-a.drawio.png?raw=true" style="height: 570px; width: 1080px;" alt="Diagram - Art. 19(2)(a) Data Act">
+-->
+
+<span class="markdown">
+
+
+
+</span>
